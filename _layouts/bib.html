@@ -85,6 +85,11 @@
   
       <!-- BibTeX Button -->
       <a class="bibtex button tiny radius" role="button" onclick="toggleExclusive('{{ entry.key }}_bibtex', '{{ entry.key }}')">Bib</a>
+	  
+	  <!-- Download Button (only show if the file exists) -->
+      {% if entry.file %}
+        <a href="/assets/papers/{{ entry.file }}" class="button tiny radius" role="button" target="_blank" download>⭳</a>
+      {% endif %}
     </div>
     
     <!-- Collapsible Content Section (Below Buttons) -->

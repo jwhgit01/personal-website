@@ -6,11 +6,17 @@ permalink: /publications/
 
 {% bibliography %}
 
-## Seminars
-### 2024
-
-**Stall Spin Flight Dynamic Modeling and Path Control**\
-FAA New and Emerging Aviation Technologies (NEAT) series, Aug. 2024.
-
-**Model Identification, State Estimation, and Control of Aircraft in Turbulent and Off-Nominal Conditions**\
-University of Maryland, Department of Aerospace Engineering seminar series, Mar. 2024.
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll('.pdf-download-btn');
+  buttons.forEach(function(btn) {
+    fetch(btn.dataset.pdf, { method: 'HEAD' }).then(function(resp) {
+      if (!resp.ok) {
+        btn.style.display = 'none';
+      }
+    }).catch(function() {
+      btn.style.display = 'none';
+    });
+  });
+});
+</script>

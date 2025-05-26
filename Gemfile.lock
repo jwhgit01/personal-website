@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
     bibtex-ruby (6.1.0)
       latex-decode (~> 0.0)
       racc (~> 1.7)
@@ -19,38 +20,14 @@ GEM
       rexml
     csl-styles (1.0.1.11)
       csl (~> 1.0)
+    csv (3.3.4)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.0)
-    ffi (1.17.0-aarch64-linux-gnu)
-    ffi (1.17.0-aarch64-linux-musl)
-    ffi (1.17.0-arm-linux-gnu)
-    ffi (1.17.0-arm-linux-musl)
-    ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86-linux-gnu)
-    ffi (1.17.0-x86-linux-musl)
-    ffi (1.17.0-x86_64-darwin)
-    ffi (1.17.0-x86_64-linux-gnu)
-    ffi (1.17.0-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     google-protobuf (4.28.3)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.3-aarch64-linux)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.3-arm64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.3-x86-linux)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.3-x86_64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -99,6 +76,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     minima (2.5.2)
       jekyll (>= 3.5, < 5.0)
@@ -106,6 +84,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     namae (1.2.0)
       racc (~> 1.7)
+    observer (0.1.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -118,59 +97,34 @@ GEM
     rouge (4.4.0)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.80.3)
-      google-protobuf (~> 4.28)
-      rake (>= 13)
-    sass-embedded (1.80.3-aarch64-linux-gnu)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-aarch64-linux-musl)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-arm-linux-gnueabihf)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-arm-linux-musleabihf)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-arm64-darwin)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-x86-linux-gnu)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-x86-linux-musl)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-x86_64-darwin)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-x86_64-linux-gnu)
-      google-protobuf (~> 4.28)
-    sass-embedded (1.80.3-x86_64-linux-musl)
+    sass-embedded (1.80.3-x64-mingw-ucrt)
       google-protobuf (~> 4.28)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2025.2)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.6.0)
-    wdm (0.1.1)
     webrick (1.8.2)
 
 PLATFORMS
-  aarch64-linux-gnu
-  aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
-  arm64-darwin
-  ruby
-  x86-linux-gnu
-  x86-linux-musl
-  x86_64-darwin
-  x86_64-linux-gnu
-  x86_64-linux-musl
+  x64-mingw-ucrt
 
 DEPENDENCIES
+  base64
+  csv
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3)
   jekyll-feed (~> 0.6)
   jekyll-remote-theme
   jekyll-scholar (~> 7.1, >= 7.1.3)
   kramdown-parser-gfm
+  logger
   minima (~> 2.5)
+  observer
   tzinfo (>= 1, < 3)
   tzinfo-data
-  wdm (~> 0.1.0)
   webrick (~> 1.8)
 
 BUNDLED WITH

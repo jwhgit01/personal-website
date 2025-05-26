@@ -76,7 +76,7 @@ scholar:
   sort_by: year,month
   group_by: type,year
   type_order: [article,inproceedings]
-  type_names: { article: Journal Articles, inproceedings: Conference Proceedings}
+  type_names: { article: Journal Articles, inproceedings: Conference Proceedings, misc: Seminars}
   bibliography_template: bib
 
 # The keywords to associate with your website, for SEO purposes
