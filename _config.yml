@@ -8,12 +8,49 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+############################
+# --- Required options --- #
+############################
+
+# Name of website
+title: Jeremy W. Hopwood
+
+# Your name to show in the footer
+author: Jeremy W. Hopwood
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  About Me: "aboutme"
+  Publications: "publications"
+  Teaching & Mentorship: "teaching"
+  Projects:
+    - Nonlinear Observers: "observers"
+    - Wind Estimation: "wind_estimation"
+    - System ID: "system_id"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/assets/img/Lfg_white.png"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# then specify the following parameter
+#title-img: /path/to/image
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -21,14 +58,64 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jwhgit01
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: daattali/beautiful-jekyll@6.0.1
 plugins:
   - jekyll-feed
+  - jekyll-scholar
+  - jekyll-remote-theme
+
+# Jekyll-Scholar configuration, https://github.com/inukshuk/jekyll-scholar
+scholar:
+  style: ./_bibliography/ieee-no-numbers.csl
+  order: descending
+  group_order: ascending,descending
+  sort_by: year,month
+  group_by: type,year
+  type_order: [article,inproceedings]
+  type_names: { article: Journal Articles, inproceedings: Conference Proceedings}
+  bibliography_template: bib
+
+# The keywords to associate with your website, for SEO purposes
+keywords: "nonlinear control,flight dynamics,flight controls,estimation,system identification"
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+page-col: "#ffffff"
+text-col: "#023047"
+link-col: "#fb8500"
+hover-col: "#219ebc"
+navbar-col: "#8ecae6"
+navbar-text-col: "#023047"
+navbar-border-col: "#8ecae6"
+footer-col: "#8ecae6"
+footer-text-col: "#023047"
+footer-link-col: "#023047"
+footer-hover-col: "#219ebc"
+
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
+
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+#mobile-theme-col: "#0085A1"
+
+# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# If you have common JavaScript files that should be included in every page, list them here
+#site-js:
+#  - "/assets/js/custom-script.js"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
