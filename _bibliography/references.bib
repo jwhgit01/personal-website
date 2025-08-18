@@ -32,7 +32,8 @@
 	volume = {48},
 	number = {3},
 	pages = {630--637},
-	doi = {10.2514/1.G007735}
+	doi = {10.2514/1.G007735},
+	file = {gahanModelbasedWindEstimation2025.pdf}
 }
 
 @inproceedings{gahanUncertaintyWindEstimates2024,
@@ -237,7 +238,8 @@
 	month = jan,
 	address = {Orlando, FL},
 	doi = {10.2514/6.2025-1626},
-	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric research. This paper presents a novel nonlinear observer for wind estimation, leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential stability guarantees. By only estimating the unmeasured wind and air-relative velocity, the reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption, reformulating the nonlinear wind estimation problem into the design of a linear, time-varying observer. Simulations with a nonlinear multirotor aircraft model demonstrate the observer's robustness to turbulence and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.}
+	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric research. This paper presents a novel nonlinear observer for wind estimation, leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential stability guarantees. By only estimating the unmeasured wind and air-relative velocity, the reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption, reformulating the nonlinear wind estimation problem into the design of a linear, time-varying observer. Simulations with a nonlinear multirotor aircraft model demonstrate the observer's robustness to turbulence and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.},
+	file = {hopwoodNonlinearWindEstimation2025.pdf}
 }
 
 @techreport{hopwoodPassivitybasedWindEstimation2023a,
@@ -260,7 +262,8 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {Orlando, FL},
 	doi = {10.2514/6.2024-2654},
-	abstract = {Wind measurements in the lower atmosphere are vital to the expansion of air mobility operations, providing boundary condition data for numerical weather models and supporting planning and control systems for improved weather tolerance and safety. Traditional approaches to wind estimation from flight data rely on linearization of the flight dynamic model and are therefore only valid near the nominal flight condition. To obtain accurate wind estimates in maneuvering flight, this ``small perturbations'' restriction must be relaxed. This paper presents the design and simulation of a nonlinear, passivity-based observer for aircraft in wind with global exponential convergence guarantees. The main results include explicit formulas for implementing the observer as well as a linear matrix inequality that can be used to optimize wind estimate convergence. The wind observer is implemented using flight test data, demonstrating good performance even in maneuvering flight through turbulent air.}
+	abstract = {Wind measurements in the lower atmosphere are vital to the expansion of air mobility operations, providing boundary condition data for numerical weather models and supporting planning and control systems for improved weather tolerance and safety. Traditional approaches to wind estimation from flight data rely on linearization of the flight dynamic model and are therefore only valid near the nominal flight condition. To obtain accurate wind estimates in maneuvering flight, this ``small perturbations'' restriction must be relaxed. This paper presents the design and simulation of a nonlinear, passivity-based observer for aircraft in wind with global exponential convergence guarantees. The main results include explicit formulas for implementing the observer as well as a linear matrix inequality that can be used to optimize wind estimate convergence. The wind observer is implemented using flight test data, demonstrating good performance even in maneuvering flight through turbulent air.},
+	file = {hopwoodPassivitybasedWindEstimation2024.pdf}
 }
 
 @article{hopwoodPracticalNonlinearFlight2025,
@@ -281,7 +284,8 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {Orlando, FL},
 	doi = {10.2514/6.2024-1305},
-	abstract = {Large domain, accurate flight dynamic models with well-characterized uncertainty are often required for estimation and control of unmanned air vehicles. For unstable aircraft, identifying these models is a challenging task. Stabilizing controllers tend to suppress important dynamics, amplify artificial dynamics, and introduce correlation. For large domain model identification requiring large-amplitude excitation, there is often no stability guarantee, greatly increasing risk. To develop a model that covers the desired flight envelope, a two-phase data collection approach is taken where using a simple baseline controller, a set of linear, time-invariant models are identified about flight conditions that define the vertices of an uncertain polytopic linear parameter-varying (LPV) system. A robust LPV control law is then synthesized to stabilize the system with an H<sub>∞</sub> norm bound guarantee, allowing for excitation over a large domain for nonlinear system identification. This modeling approach is applied to a small quadrotor aircraft whose motion is robustly stabilized about a slowly varying reference velocity, which serves as the LPV scheduling parameter. The performance objective is chosen to allow sufficient excitation for nonlinear system identification while maintaining robust stability, thus allowing for higher-amplitude excitation signals to safely and effectively excite the aircraft dynamics over a large domain. The control law is demonstrated by simulating the LPV model identified from flight data.}
+	abstract = {Large domain, accurate flight dynamic models with well-characterized uncertainty are often required for estimation and control of unmanned air vehicles. For unstable aircraft, identifying these models is a challenging task. Stabilizing controllers tend to suppress important dynamics, amplify artificial dynamics, and introduce correlation. For large domain model identification requiring large-amplitude excitation, there is often no stability guarantee, greatly increasing risk. To develop a model that covers the desired flight envelope, a two-phase data collection approach is taken where using a simple baseline controller, a set of linear, time-invariant models are identified about flight conditions that define the vertices of an uncertain polytopic linear parameter-varying (LPV) system. A robust LPV control law is then synthesized to stabilize the system with an H<sub>∞</sub> norm bound guarantee, allowing for excitation over a large domain for nonlinear system identification. This modeling approach is applied to a small quadrotor aircraft whose motion is robustly stabilized about a slowly varying reference velocity, which serves as the LPV scheduling parameter. The performance objective is chosen to allow sufficient excitation for nonlinear system identification while maintaining robust stability, thus allowing for higher-amplitude excitation signals to safely and effectively excite the aircraft dynamics over a large domain. The control law is demonstrated by simulating the LPV model identified from flight data.},
+	file = {hopwoodRobustLinearParametervarying2024.pdf}
 }
 
 @article{hopwoodRobustStallSpin2023,
@@ -305,7 +309,8 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {San Diego, CA},
 	doi = {10.2514/6.2022-1159},
-	abstract = {This paper presents the development and simulation of a robust, periodic linear control law to direct a fixed-wing unmanned aircraft in a stall spin along a desired path. As a flight termination sequence, a spin dissipates energy in a stable, controlled manner. Because control deflections are required to initiate and maintain such a spin, it may be possible, and desirable, to guide the aircraft toward a specific impact location by tilting the, otherwise vertical, axis of the spinning descent. Through augmentation of the dynamics with a measure of velocity vector direction error and the exploitation of a steady spin rate, a yaw-periodic linear quadratic regulator is designed to direct the spin. Then, a robust H-infinity controller is designed for a reduced set of aircraft states and implemented in parallel to robustly maintain the spin in the presence of exogenous disturbances and modeling errors. The combination of the two controllers is shown through simulation of the nonlinear closed-loop system to robustly follow a desired path in the presence of modeling errors and external disturbances.}
+	abstract = {This paper presents the development and simulation of a robust, periodic linear control law to direct a fixed-wing unmanned aircraft in a stall spin along a desired path. As a flight termination sequence, a spin dissipates energy in a stable, controlled manner. Because control deflections are required to initiate and maintain such a spin, it may be possible, and desirable, to guide the aircraft toward a specific impact location by tilting the, otherwise vertical, axis of the spinning descent. Through augmentation of the dynamics with a measure of velocity vector direction error and the exploitation of a steady spin rate, a yaw-periodic linear quadratic regulator is designed to direct the spin. Then, a robust H-infinity controller is designed for a reduced set of aircraft states and implemented in parallel to robustly maintain the spin in the presence of exogenous disturbances and modeling errors. The combination of the two controllers is shown through simulation of the nonlinear closed-loop system to robustly follow a desired path in the presence of modeling errors and external disturbances.},
+	file = {hopwoodStallSpinFlight2022.pdf}
 }
 
 @inproceedings{hopwoodSymmetrypreservingReducedorderObserver2025,
@@ -316,7 +321,8 @@
 	month = jul,
 	address = {Denver, CO},
 	doi = {10.48550/arXiv.2411.07998},
-	abstract = {A symmetry-preserving, reduced-order state observer is presented for the unmeasured part of a system's state, where the nonlinear system dynamics exhibit symmetry under the action of a Lie group. Leveraging this symmetry with a moving frame, the observer dynamics are constructed such that they are invariant under the Lie group's action. Sufficient conditions for the observer to be asymptotically stable are developed by studying the stability of an invariant error system. As an illustrative example, the observer is applied to the problem of rigid-body velocity estimation, which demonstrates how exploiting the symmetry of the system can simplify the stabilization of the estimation error dynamics.}
+	abstract = {A symmetry-preserving, reduced-order state observer is presented for the unmeasured part of a system's state, where the nonlinear system dynamics exhibit symmetry under the action of a Lie group. Leveraging this symmetry with a moving frame, the observer dynamics are constructed such that they are invariant under the Lie group's action. Sufficient conditions for the observer to be asymptotically stable are developed by studying the stability of an invariant error system. As an illustrative example, the observer is applied to the problem of rigid-body velocity estimation, which demonstrates how exploiting the symmetry of the system can simplify the stabilization of the estimation error dynamics.},
+	file = {hopwoodSymmetrypreservingReducedorderObserver2025.pdf}
 }
 
 @article{hopwoodSymmetrypreservingReducedorderWind2025,
@@ -349,5 +355,17 @@
 	pages = {1169--1183},
 	address = {Long Beach, CA},
 	doi = {10.33012/2024.19570},
-	abstract = {This paper describes the development, implementation, and testing of a GNSS jammer localizer using power measurement profiles collected during un-crewed aerial system (UAS) fly-bys. A linearized measurement equation based on the Friis power transmission formula is derived in which RF channel propagation parameters are grouped into a single parameter for estimation. Synchronized power and UAS position measurements are processed in a batch-type sequential non-linear least squares algorithm for simultaneous estimation of static jammer position and received power model parameters. We develop a low size, weight, power, and cost (SWAP-C) quad-rotor UAS test bed that can collect and time-stamp power measurements with UAS position. Since GNSS jamming is illegal, a LoRa 868 MHz transmitter is used as a surrogate GNSS jammer during field testing -- providing Received Signal Strength Indicator (RSSI) measurements to the LoRa receiver onboard the UAS. Testing is conducted at the Virginia Tech Kentland Experimental Aerial Systems Lab, where emitter localization is evaluated for three different trajectories. Experimental performance analysis suggests that meter-level localization accuracy is achievable with prior knowledge on source location and by accounting for antenna gain pattern variations over time in the estimation process with a first order Gauss Markov Process.}
+	abstract = {This paper describes the development, implementation, and testing of a GNSS jammer localizer using power measurement profiles collected during un-crewed aerial system (UAS) fly-bys. A linearized measurement equation based on the Friis power transmission formula is derived in which RF channel propagation parameters are grouped into a single parameter for estimation. Synchronized power and UAS position measurements are processed in a batch-type sequential non-linear least squares algorithm for simultaneous estimation of static jammer position and received power model parameters. We develop a low size, weight, power, and cost (SWAP-C) quad-rotor UAS test bed that can collect and time-stamp power measurements with UAS position. Since GNSS jamming is illegal, a LoRa 868 MHz transmitter is used as a surrogate GNSS jammer during field testing -- providing Received Signal Strength Indicator (RSSI) measurements to the LoRa receiver onboard the UAS. Testing is conducted at the Virginia Tech Kentland Experimental Aerial Systems Lab, where emitter localization is evaluated for three different trajectories. Experimental performance analysis suggests that meter-level localization accuracy is achievable with prior knowledge on source location and by accounting for antenna gain pattern variations over time in the estimation process with a first order Gauss Markov Process.},
+	file = {smithUASbasedRadioFrequency2024.pdf}
+}
+
+@phdthesis{hopwoodNonlinearObserversAircraft2025,
+  title = {Nonlinear {{Observers}} for {{Aircraft Maneuvering}} in {{Wind}}},
+  author = {Hopwood, Jeremy W},
+  year = {2025},
+  month = apr,
+  address = {Blacksburg, VA},
+  url = {https://hdl.handle.net/10919/133533},
+  school = {Virginia Polytechnic Institute and State University},
+  file = {hopwoodNonlinearObserversAircraft2025.pdf}
 }

@@ -4,6 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 
+# Publications
+*See [Google Scholar](https://scholar.google.com/citations?hl=en&user=-kIX4SIAAAAJ) for an up-to-date list of publications.* 
+
 {% bibliography %}
 
 <script>

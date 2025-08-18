@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About Me
-permalink: /aboutme/
+permalink: /about/
 ---
 
 ## Education
-**2022--** Ph.D. Candidate in Aerospace Engineering, Virginia Tech\
-Dynamics, Control, and Estimation\
-GPA: 4.00
+**2020--2025** Ph.D. Aerospace Engineering, Virginia Tech\
+Dynamics, Control, and Estimation
 
-#### Ph.D. Dissertation (In progress):
-***Model Identification and Stochastic Nonlinear Observers for Aircraft Maneuvering in Turbulence***
+#### Ph.D. Dissertation:
+***Nonlinear Observers for Aircraft Maneuvering in Wind***
 
 Advisory Committee:
 - Prof. Craig A. Woolsey (Chair)
@@ -19,8 +18,7 @@ Advisory Committee:
 - Prof. Daniel J. Stilwell
 
 **2014--2019** B.S. Mechanical Engineering, Central Connecticut State University\
-Aerospace Concentration, Mathematics Minor\
-GPA: 3.67
+Aerospace Concentration, Mathematics Minor
 
 ## Fellowships and Awards
 - 2024 Walts Fellow

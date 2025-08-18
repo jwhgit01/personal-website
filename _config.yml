@@ -13,7 +13,7 @@
 ############################
 
 # Name of website
-title: Jeremy W. Hopwood
+title: Personal Website | PACE Lab
 
 # Your name to show in the footer
 author: Jeremy W. Hopwood
@@ -23,13 +23,13 @@ author: Jeremy W. Hopwood
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Publications: "publications"
-  Teaching & Mentorship: "teaching"
-  Projects:
+  About Me: "about"
+  Research:
     - Nonlinear Observers: "observers"
     - Wind Estimation: "wind_estimation"
     - System ID: "system_id"
+  Publications: "publications"
+  Teaching: "teaching"
 
 ################
 # --- Logo --- #
@@ -51,13 +51,11 @@ round-avatar: true
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-email: your-email@example.com
+email: jhopwood@ae.msstate.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Personal website of Jeremy W. Hopwood, Ph.D.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://hopwoodlab.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jwhgit01
 
 # Build settings
@@ -76,7 +74,7 @@ scholar:
   sort_by: year,month
   group_by: type,year
   type_order: [article,inproceedings]
-  type_names: { article: Journal Articles, inproceedings: Conference Proceedings, misc: Seminars}
+  type_names: { article: Journal Articles, inproceedings: Conference Proceedings, misc: Seminars, thesis: Dissertation}
   bibliography_template: bib
 
 # The keywords to associate with your website, for SEO purposes
