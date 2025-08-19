@@ -9,7 +9,7 @@ permalink: /about/
 Dynamics, Control, and Estimation
 
 #### Ph.D. Dissertation:
-***Nonlinear Observers for Aircraft Maneuvering in Wind***
+[***Nonlinear Observers for Aircraft Maneuvering in Wind***](/publications/#hopwoodNonlinearObserversAircraft2025)
 
 Advisory Committee:
 - Prof. Craig A. Woolsey (Chair)
@@ -30,3 +30,11 @@ Aerospace Concentration, Mathematics Minor
 - 2019 Connecticut Space Grant Consortium Undergraduate Research Fellow
 - 2018 Best Paper in Design Education Session, 2018 AIAA SciTech
 - 2017 NASA CT Space Grant Helicopter/UAS Workshop, Central Connecticut State University
+
+## Collegiate Athletics and Coaching
+**2019–2020** USA Track & Field Certified Level I Coach and Volunteer Coach
+
+**2017–2019** NCAA Div. I Track and Field, Central Connecticut State University, Pole Vault
+- 2019 Senior Academic Award Recipient
+- 2017-18 & 2018-19 CCSU Travelers All-Academic Team
+- 2017-18 & 2018-19 Northeast Conference Academic Honor Roll

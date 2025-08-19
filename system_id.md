@@ -4,32 +4,29 @@ title: System Identification
 permalink: /system_id/
 ---
 # System Identification  
-*Large-domain modeling, system identification, and flight test for UAVs*  
+*Large-domain modeling, system identification, and flight testing of UAVs*  
 
 ## Overview  
 Accurate flight dynamic models are essential for model-based control, estimation, and autonomy. For UAVs, however, obtaining nonlinear models valid across a wide range of flight conditions is challenging. Traditional approaches often capture only small perturbations around a nominal condition, weakening the guarantees of any controller or estimator designed from them. Our research develops **nonlinear multirotor, fixed-wing, and vertical-takeoff-and-landing (VTOL) models** that balance accuracy and practicality, along with **system identification methods** that remain safe even for inherently unstable aircraft.
 
 ## Approach  
-System identification for UAVs requires overcoming several challenges: nonlinear aerodynamics, instability, and the need for safe automated experiments. Our approach addresses these challenges through three main directions:  
+System identification for UAVs requires overcoming several challenges: nonlinear aerodynamics, instability, and the need for safe automated experiments. Our approaches have addressed these challenges through three main directions:  
 
-1. **Nonlinear multirotor modeling**  
+1. **Nonlinear multirotor and VTOL modeling**  
    - Models derived from blade-element and momentum theory, valid across diverse flight conditions  
-   - Simplified forms enable tractable estimation and control design  
-
+   - Physics-informed simplifications enable tractable estimation and control design  
 2. **Safe system identification for unstable aircraft**  
-   - Framework leverages stability guarantees from a **robust LPV H<sub>2</sub>/H<sub>∞</sub> controller**  
-   - Controller executes specially designed reference signals that **decorrelate model regressors**, ensuring accurate parameter estimation  
+   - Framework leverages stability guarantees from a robust LPV H<sub>2</sub>/H<sub>∞</sub> controller
+   - Controller executes specially designed reference signals that decorrelate model regressors, ensuring accurate parameter estimation  
    - Enables rich input/output data collection without risking instability  
-
 3. **Spin and stall dynamics modeling**  
-   - Data-driven aerodynamic models for stall-spin regimes of fixed-wing UAVs  
-   - Supports robust control design for extreme flight conditions  
+   - Data-driven aerodynamic models for fixed-wing aircraft in a stall-spin regime
+   - Supports control and estimation strategies in these extreme flight conditions  
 
 ## Why It Matters  
 - **Safety assurance**: Stabilizes inherently unstable UAVs while performing aggressive excitation for system identification.  
-- **Reliable identification**: Reference trajectories and robust control design mitigate regressor correlation, improving parameter estimation accuracy.  
-- **Scalable methods**: Applicable to both small UAVs and larger, high-cost vehicles where model-free excitation is unsafe.  
-- **Advanced autonomy**: Provides the modeling foundation needed for weather-tolerant and robust next-generation air mobility.  
+- **Scalable methods**: Applicable to both small UAVs and larger, high-cost vehicles where excitation under non-robust control is high-risk.  
+- **Advanced autonomy**: Provides the modeling foundation needed for weather-tolerant air mobility operations.  
 
 ## Selected Publications  
 - *[Practical Nonlinear Flight Dynamic Modeling for Multirotor Aircraft](/publications/#hopwoodPracticalNonlinearFlight2025)* --- Develops compact nonlinear multirotor models valid across diverse conditions, balancing fidelity and identifiability.  

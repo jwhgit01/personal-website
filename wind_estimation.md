@@ -7,19 +7,18 @@ permalink: /wind_estimation/
 *Provably effective wind estimation for safe and reliable flight*  
 
 ## Overview  
-Knowledge of wind velocity is fundamental across fields ranging from atmospheric science to aeronautics. Accurate wind information supports critical applications such as weather forecasting, flight safety, and efficient path planning. For aircraft, measurements of airspeed, angle of attack, and sideslip angle depend on reliable wind data, enabling both pilot decision-making and advanced automation.  
-
-Direct wind measurements, however, are often constrained by cost, payload, or operational limitations. Traditional sensors such as anemometers and multi-hole probes may not be feasible for small unmanned aerial vehicles (UAVs) or may fail in regions of flight with insufficient airflow. To address these challenges, our research develops **estimation techniques that infer wind velocity indirectly from aircraft motion**, eliminating the need for specialized sensors. These methods apply across a broad spectrum of vehicles, from small UAVs to large commercial aircraft.  
+Knowledge of wind velocity is fundamental across fields ranging from atmospheric science to aeronautics. Accurate wind information supports critical applications such as weather forecasting, flight safety, and efficient path planning. Direct wind measurements, however, are often constrained by cost, payload, or operational limitations. Traditional sensors such as anemometers and multi-hole probes may not be feasible for small unmanned aerial vehicles (UAVs) or may fail in regions of flight with insufficient airflow. To address these challenges, our research develops **estimation techniques that infer wind velocity indirectly from aircraft motion**, eliminating the need for specialized sensors. These methods apply across a broad spectrum of vehicles, from small UAVs to large commercial aircraft.  
 
 ## Approach  
-Wind estimation is challenging because it is inherently a **nonlinear problem**. Standard filtering techniques, such as the extended Kalman filter, provide only local guarantees and can break down during aggressive maneuvers or in rapidly changing wind conditions — situations common in urban air mobility scenarios.  
+Wind estimation is challenging because it is inherently a **nonlinear problem**. Standard filtering techniques, such as the extended Kalman filter, provide only local guarantees and can break down during aggressive maneuvers or in rapidly changing wind conditions --- situations common in urban air mobility scenarios.  
 
-Our approach is to design **nonlinear observers** that provide stronger mathematical guarantees: instead of relying on approximations, these observers ensure stability and convergence of the estimation error dynamics. Two main approaches have been developed to accomplish this task.
+Our approach is to design **nonlinear observers** that provide stronger mathematical guarantees. Instead of relying on linear approximations, these observers ensure stability of the estimation error dynamics. Two main approaches have been developed to accomplish this task.
 1. **Symmetry-preserving reduced-order wind observers**  
    - Motivating application of the research described [here](/observers)
    - Observer constructed by leveraging the symmetry of aircraft dynamics under the action of the Lie group SO(3)
+   - Extensions to stochastic differential equations (SDEs) that incorporate random turbulence
 2. **Passivity-based wind estimation**  
-   - Leverage theory of feedback passivation to contruct a state observer  
+   - Leverage energy-based perspective of "passivity" to construct an observer  
    - Energy of the wind estimate error grows no faster than the energy of disturbances and uncertainties
 
 ## Why It Matters  
@@ -35,4 +34,4 @@ Our approach is to design **nonlinear observers** that provide stronger mathemat
 - *[Uncertainty in Wind Estimates, Part 1: Analysis Using Generalized Polynomial Chaos](/publications/#gahanUncertaintyWindEstimates2024)* --- Uses generalized polynomial chaos to analyze how parametric uncertainty affects wind estimate precision.  
 - *[Uncertainty in Wind Estimates, Part 2: H∞ Filtering Using Generalized Polynomial Chaos](/publications/#gahanUncertaintyWindEstimates2024a)* --- Implements our H∞ filtering approach on the polynomial-chaos-expanded system that governs how the statistics of the aircraft's state evolve over time.
 - *[Passivity-Based Wind Estimation for Aircraft Maneuvering in Steady and Uniform Wind Fields](/publications/#hopwoodPassivitybasedWindEstimation2024)* --- Develops a nonlinear, passivity-based observer with global convergence guarantees, validated with fixed-wing flight test data.  
-- *[Intelligent Wind Estimation for Chemical Source Localization](/publications/#cooperIntelligentWindEstimation2023)* --- Uses a large-domain, nonlinear aerodynamic model for multirotor aircraft in conjuction with an unscented Kalman filter to perform wind-aware chemical source localization with small UAVs.
+- *[Intelligent Wind Estimation for Chemical Source Localization](/publications/#cooperIntelligentWindEstimation2023)* --- Uses a large-domain, nonlinear aerodynamic model for multirotor aircraft in conjunction with an unscented Kalman filter to perform wind-aware chemical source localization with small UAVs.
