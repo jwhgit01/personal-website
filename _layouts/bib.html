@@ -96,8 +96,23 @@
 	  
 	  <!-- Download Button (only show if the file exists) -->
       {% if entry.file %}
-        <a href="/assets/papers/{{ entry.file }}" class="button tiny radius" role="button" target="_blank" download><u>↓</u></a>
-      {% endif %}
+      <a href="/assets/papers/{{ entry.file }}" 
+         class="button tiny radius" 
+         role="button" 
+         target="_blank" 
+         download
+         aria-label="Download paper">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+           width="24" height="24" 
+           viewBox="0 0 24 24" 
+           fill="currentColor"
+           stroke="currentColor"
+           stroke-width="2"
+           aria-hidden="true">
+          <path d="M12 16l4-4h-3V4h-2v8H8l4 4zm-7 2v2h14v-2H5z"/>
+        </svg>
+      </a>
+    {% endif %}
     </div>
     
     <!-- Collapsible Content Section (Below Buttons) -->
