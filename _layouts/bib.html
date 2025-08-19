@@ -59,6 +59,14 @@
       white-space: pre-wrap; /* Preserve whitespace but allow wrapping */
       word-break: break-word; /* Ensure words break as necessary */
     }
+    @media (max-width: 600px) {
+      .pub-img {
+        display: none; /* Completely hide the image on small screens */
+      }
+      .publication-details {
+        padding-left: 0; /* Remove padding so the text aligns flush left */
+      }
+    }
   </style>
 </head>
 
@@ -88,7 +96,7 @@
 	  
 	  <!-- Download Button (only show if the file exists) -->
       {% if entry.file %}
-        <a href="/assets/papers/{{ entry.file }}" class="button tiny radius" role="button" target="_blank" download>⭳</a>
+        <a href="/assets/papers/{{ entry.file }}" class="button tiny radius" role="button" target="_blank" download><u>↓</u></a>
       {% endif %}
     </div>
     
