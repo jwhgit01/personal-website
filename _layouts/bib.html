@@ -72,7 +72,7 @@
 
 <div class="container">
   <div class="pub-img">
-    <img src="../assets/img/{{ entry.key }}.png" alt="">
+    <img src="{{ '/assets/img/' | relative_url }}{{ entry.key }}.png" alt="">
   </div>
   <div class="publication-details">
 
@@ -96,10 +96,10 @@
 	  
 	  <!-- Download Button (only show if the file exists) -->
       {% if entry.file %}
-      <a href="/assets/papers/{{ entry.file }}" 
-         class="button tiny radius" 
-         role="button" 
-         target="_blank" 
+      <a href="{{ '/assets/papers/' | relative_url }}{{ entry.file }}"
+         class="button tiny radius"
+         role="button"
+         target="_blank"
          download
          aria-label="Download paper">
         <svg xmlns="http://www.w3.org/2000/svg" 
