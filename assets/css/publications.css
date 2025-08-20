@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: flex-start; /* Ensures both divs are aligned at the top */
+}
+.pub-img {
+  flex-shrink: 0; /* Prevents shrinking of the image container */
+}
+.pub-img img {
+  width: 200px; /* Set the fixed width for the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+.publication-details {
+  flex-grow: 1; /* Allows this div to take up the remaining space */
+  padding-left: 20px; /* Optional: Add some space between image and details */
+}
+ol.bibliography {
+  list-style: none;
+  padding: 0;
+}
+ol.bibliography li {
+  margin-bottom: 20px; /* Adjust this value for desired spacing */
+}
+.collapse-container {
+  display: flex;
+  margin-top: 10px;
+}
+.button {
+  padding: 5px 10px;
+  background-color: #fb8500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #ffb703;
+}
+.collapsible-content {
+  display: none; /* Hidden by default */
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f8f9fa;
+  /* border-left: 3px solid #ccc; */
+  max-height: 200px; /* Set the max height */
+  overflow: auto; /* Enable scrolling */
+  width: 100%; /* Ensure the collapsible sections take up full width */
+}
+pre {
+  /* background-color: #ebebeb; */
+  border: none;
+  padding: none;
+  white-space: pre-wrap; /* Preserve whitespace but allow wrapping */
+  word-break: break-word; /* Ensure words break as necessary */
+}
+@media (max-width: 600px) {
+  .pub-img {
+    display: none; /* Completely hide the image on small screens */
+  }
+  .publication-details {
+    padding-left: 0; /* Remove padding so the text aligns flush left */
+  }
+}
