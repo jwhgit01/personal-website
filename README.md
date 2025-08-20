@@ -1,7 +1,9 @@
 # personal-website
 Personal website of Jeremy W. Hopwood
 
-To build, 
+[Jekyll documentation](https://jekyllrb.com/docs/)
+
+To build, push changes to GitHub OR
 curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/bcc3af90-e818-41a6-aa47-b12ee9ee7f2f"
 
 Windows instructions:
