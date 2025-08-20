@@ -4,6 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
+{:refdef: style="text-align: center;"}
+![Hopwood Headshot](/assets/img/headshot_square_small.jpg)
+{: refdef}
+
 ## Education
 **2020--2025** Ph.D. Aerospace Engineering, Virginia Tech\
 Dynamics, Control, and Estimation

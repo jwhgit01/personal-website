@@ -7,7 +7,7 @@ permalink: /teaching/
 
 I believe that teaching aerospace engineering is not only about conveying theory, but also about showing students **how fundamental principles connect to practice**. My approach emphasizes:
 
-- Building strong foundations in **dynamics, control, and estimation**.  
+- Building strong foundations in **dynamics, control, and estimation** theory.  
 - Bridging theory with **hands-on applications**, including flight experiments and simulations.  
 - Encouraging students to think critically about **robustness, uncertainty, and safety** in real-world systems.   
 

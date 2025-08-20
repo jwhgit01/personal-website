@@ -37,7 +37,8 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/headshot_square.jpeg"
+# avatar: "/assets/img/headshot_square.jpeg"
+avatar: "/assets/img/logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -73,12 +74,12 @@ scholar:
   group_order: ascending,descending
   sort_by: year,month
   group_by: type,year
-  type_order: [article,inproceedings]
+  type_order: [article,inproceedings,misc,thesis]
   type_names: { article: Journal Articles, inproceedings: Conference Proceedings, misc: Seminars, thesis: Dissertation}
   bibliography_template: bib
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "nonlinear control,flight dynamics,flight controls,estimation,system identification"
+keywords: "PACE lab,nonlinear control,flight dynamics,flight controls,estimation,system identification"
 
 ######################################
 # --- Colours / background image --- #
@@ -86,16 +87,16 @@ keywords: "nonlinear control,flight dynamics,flight controls,estimation,system i
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 page-col: "#ffffff"
-text-col: "#023047"
+text-col: "#333333" # "#023047"
 link-col: "#fb8500"
-hover-col: "#219ebc"
-navbar-col: "#8ecae6"
-navbar-text-col: "#023047"
-navbar-border-col: "#8ecae6"
-footer-col: "#8ecae6"
-footer-text-col: "#023047"
-footer-link-col: "#023047"
-footer-hover-col: "#219ebc"
+hover-col: "#FFB81C" # "#219ebc"
+navbar-col: "#5d1725" # "#8ecae6"
+navbar-text-col: "#ffffff" # "#023047"
+navbar-border-col: "#C1C6C8" # "#8ecae6"
+footer-col: "#5d1725" # "#8ecae6"
+footer-text-col: "#ffffff" # "#023047"
+footer-link-col: "#ffffff" # "#023047"
+footer-hover-col: "#FFB81C" # "#219ebc"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
