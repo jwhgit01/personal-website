@@ -17,8 +17,8 @@ Through this philosophy, I aim to prepare students for careers in both academia 
 ## Courses at Mississippi State University
 I am currently developing and teaching courses in the Department of Aerospace Engineering, including:
 
-- **ASE 4133/6133 --- Automatic Control of Aerospace Vehicles**  
-  Undergraduate and graduate-level course covering modern control and estimation theory with applications to aerospace systems.  
+- **ASE 3823 --- Spacecraft Attitude Dynamics**  
+  Junior-level course on spacecraft rotational kinematics & dynamics, attitude determination/estimation, and attitude control. 
 
 - **ASE XXXX: Nonlinear Systems Theory** *(forthcoming)*  
   Graduate-level introduction to the analysis and control of nonlinear dynamical systems.
