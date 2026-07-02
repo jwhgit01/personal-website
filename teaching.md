@@ -20,8 +20,8 @@ I am currently developing and teaching courses in the Department of Aerospace En
 - **ASE 3823 --- Spacecraft Attitude Dynamics**  
   Junior-level course on spacecraft rotational kinematics & dynamics, attitude determination/estimation, and attitude control. 
 
-- **ASE XXXX: Nonlinear Systems Theory** *(forthcoming)*  
-  Graduate-level introduction to the analysis and control of nonlinear dynamical systems.
+- **ASE 8990: Linear Control Theory**  
+  Graduate-level introduction to contemporary topics regarding the analysis and control of linear systems.
 
 *(Specific course numbers and offerings will be updated as the curriculum evolves.)*
 

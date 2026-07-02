@@ -3,7 +3,7 @@
 
 <div class="container">
   <div class="pub-img">
-    <img src="{{ '/assets/img/' | relative_url }}{{ entry.key }}.png" alt="">
+    <img src="{{ '/assets/img/' | relative_url }}{{ entry.image }}" alt="">
   </div>
   <div class="publication-details">
 
@@ -20,6 +20,8 @@
       <!-- Link Button (only show if the link exists) -->
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="button tiny radius" role="button" target="_blank">🔗</a>
+      {% elsif entry.url %}
+        <a href="{{ entry.url }}" class="button tiny radius" role="button" target="_blank">🔗</a>
       {% endif %}
 
       <!-- BibTeX Button -->

@@ -7,83 +7,37 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {Kissimmee, Florida},
 	doi = {10.2514/6.2018-0051},
-	abstract = {A research team comprised of students and faculty from Central Connecticut State University's (CCSU) School of Engineering, Science, and Technology has begun the design, production, and testing of a full-scale helicopter flight simulator with a moving platform. This paper presents the system identification, controller tuning and validation, and comparison of simulator dynamics against available helicopter dynamic models during typical flight maneuvers. The purposes for conducting this research include: i) to build a fully functional flight simulator that can be used as a test bed for students research projects; ii) to apply theoretical lessons of control of dynamic systems to a real, tangible electromechanical system; iii) to provide students with hands-on experience on how to design and fly a helicopter. CCSU students have built and programed all of the mechanical and electrical systems. The basic design weight for the simulator is 300 lbs force applied to the pilotseat. The structures are designed to have enough strength to sustain a maximum of 3g and a minimum -1g flight conditions. There are three actuators in place that can be used torotate the platform in the pitching, rolling, and yawing directions. All electrical systems were designed, fabricated, and assembled by CCSU students. The controller was designed and implemented by the students and faculty of CCSU.}
+	abstract = {A research team comprised of students and faculty from Central Connecticut State University's (CCSU) School of Engineering, Science, and Technology has begun the design, production, and testing of a full-scale helicopter flight simulator with a moving platform. This paper presents the system identification, controller tuning and validation, and comparison of simulator dynamics against available helicopter dynamic models during typical flight maneuvers. The purposes for conducting this research include: i) to build a fully functional flight simulator that can be used as a test bed for students research projects; ii) to apply theoretical lessons of control of dynamic systems to a real, tangible electromechanical system; iii) to provide students with hands-on experience on how to design and fly a helicopter. CCSU students have built and programed all of the mechanical and electrical systems. The basic design weight for the simulator is 300 lbs force applied to the pilotseat. The structures are designed to have enough strength to sustain a maximum of 3g and a minimum -1g flight conditions. There are three actuators in place that can be used torotate the platform in the pitching, rolling, and yawing directions. All electrical systems were designed, fabricated, and assembled by CCSU students. The controller was designed and implemented by the students and faculty of CCSU.},
+	file = {broderickControllerDesignValidation2018.pdf},
+	image = {broderickControllerDesignValidation2018.jpg}
 }
 
-@inproceedings{cooperIntelligentWindEstimation2023,
-	title = {Intelligent Wind Estimation for Chemical Source Localization},
-	booktitle = {79th {{Annual Forum}} \& {{Technology Display}}},
-	author = {Cooper, Jared and Hopwood, Jeremy W and Woolsey, Craig A and De Wekker, Stephan F. J. and DeVore, Michael},
-	year = {2023},
-	month = may,
-	pages = {1--20},
-	publisher = {Vertical Flight Society},
-	address = {West Palm Beach, FL},
-	doi = {10.4050/F-0079-2023-18194},
-	abstract = {This paper presents a methodology to sense ambient wind conditions to assist in localizing the source of a released agent using small unmanned aerial systems (sUAS). The release of chemical, biological, radiological, or nuclear (CBRN) agents is a long-standing threat to populated areas and to ecosystems, in general. Such agents could be released intentionally by an adversary, accidentally, or by means of natural disaster. The technology and methods to detect, localize, and model release and dispersion of CBRN agents have been enhanced by integrating cross-disciplinary solutions using advances from sensor design, intelligent signal processing, control systems, vehicle design, chemical modeling, and atmospheric modeling. The miniaturization of sensors and sUAS has enabled the application of sUAS with a chemical sensor payload to detect and localize the source of CBRN agents. In many instances, this chemotaxis operation can be performed faster and more accurately with the addition of atmospheric information, such as ambient wind condition. The paper provides an overview of chemical source localization and current challenges which motivated this work, including operation in complex settings and turbulence. Analysis of these challenges from an atmospheric science perspective is summarized along with strategies to obtain accurate and useful wind estimates that assist in localizing the source quickly and efficiently. A description of the wind estimation approach, based on Bayesian estimation, is provided along with results from simulation studies utilizing realistic vehicle dynamics, wind, turbulence, and chemical plume models.}
-}
-
-@article{gahanModelbasedWindEstimation2025,
-	title = {Model-Based Wind Estimation Using {{H<sub>∞</sub>}} Filtering with Flight-Test Results},
-	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2025},
-	month = mar,
-	journal = {Journal of Guidance, Control, and Dynamics},
-	volume = {48},
-	number = {3},
-	pages = {630--637},
-	doi = {10.2514/1.G007735},
-	file = {gahanModelbasedWindEstimation2025.pdf}
-}
-
-@inproceedings{gahanUncertaintyWindEstimates2024,
-	title = {Uncertainty in Wind Estimates, Part 1: {{Analysis}} Using Generalized Polynomial Chaos},
-	shorttitle = {Uncertainty in Wind Estimates, Part 1},
-	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
-	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2024},
+@inproceedings{hopwoodAeroservoelasticDesignWind2019,
+	title = {Aeroservoelastic Design and Wind Tunnel Testing Using Parameter-Varying Optimal Control and Inertial-Based Sensing},
+	booktitle = {{{AIAA Scitech}} 2019 {{Forum}}},
+	author = {Hopwood, Jeremy W. and Ruskin, Benjamin D. and Broderick, David J. and Wei, Fu-Shang},
+	year = {2019},
 	month = jan,
 	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {Orlando, FL},
-	doi = {10.2514/6.2024-2824},
-	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. While many indirect estimation approaches achieve desirable accuracy under the assumption of known system parameters, the effect of parametric uncertainty on wind estimate precision is important and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to re-cast the dynamics of a system with non-deterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and characterizing the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case presented here, gPC exhibits a computational advantage over Monte Carlo sampling-based methods and produces a deterministic system upon which control and estimation methods can be applied.}
+	address = {San Diego, California},
+	doi = {10.2514/6.2019-0608},
+	abstract = {This research involved the formulation of a binary aeroservoelastic model, design and construction of the associated fixed angle-of-attack cantilever wing, the design of an optimal control system to suppress oscillations throughout the flight envelope, and the testing and analysis of the aeroservoelastic control system in the Central Connecticut State University wind tunnel. This research used oscillatory-unsteady aerodynamics, as opposed to a quasi-steady assumption, as well as a linear-quadratic regulator that was developed to minimize kinetic energy, elastic strain energy, and the input energy. In simulation, this controller displayed a good time response and continued stability past the flutter velocity. Furthermore, this research employed accelerometer/gyroscope state measurement, as opposed to strain-based sensing. Wind tunnel testing showed improved response at lower speeds, yet revealed parameter and delay sensitivity at high airspeeds.},
+	file = {hopwoodAeroservoelasticDesignWind2019.pdf},
+	image = {hopwoodAeroservoelasticDesignWind2019.jpg}
 }
 
-@inproceedings{gahanUncertaintyWindEstimates2024a,
-	title = {Uncertainty in Wind Estimates, Part 2: {{H<sub>∞</sub>}} Filtering Using Generalized Polynomial Chaos},
-	shorttitle = {Uncertainty in Wind Estimates, Part 2},
-	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
-	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2024},
+@inproceedings{greshamSpinAerodynamicModeling2022,
+	title = {Spin Aerodynamic Modeling for a Fixed-Wing Aircraft Using Flight Data},
+	booktitle = {{{AIAA SciTech}} 2022 {{Forum}}},
+	author = {Gresham, James L. and Simmons, Benjamin M. and Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2022},
 	month = jan,
 	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {Orlando, FL},
-	doi = {10.2514/6.2024-2825},
-	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. While many estimation approaches achieve desirable accuracy under the assumption of known system parameters, reducing the effect of parametric uncertainty on wind estimate precision is desirable and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to re-cast the dynamics of a system with non-deterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and improving the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case presented, a gPC H-infinity (H<sub>∞</sub>) filter shows superiority over a nominal H<sub>∞</sub> filter in terms of variance in estimates due to model parametric uncertainty. The error due to parametric uncertainty, as characterized by the variance in estimates from the mean, is reduced by an average of ~25%.}
-}
-
-@article{gahanWindEstimateUncertainty2026,
-	title = {Wind Estimate Uncertainty Quantification and Sensitivity Analysis Using Generalized Polynomial Chaos},
-	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
-  	year = 2026,
-  	month = feb,
-  	journal = {Journal of Guidance, Control, and Dynamics},
-  	volume = {Articles In Advance},
-  	publisher = {{American Institute of Aeronautics and Astronautics}},
-  	doi = {10.2514/1.G008513},
-	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. While many indirect estimation approaches achieve desirable accuracy under the assumption of known system parameters, the effect of parametric uncertainty on wind estimate precision is important and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to re-cast the dynamics of a system with non-deterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and characterizing the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case presented here, gPC exhibits a computational advantage over Monte Carlo sampling-based methods and produces a deterministic system upon which control and estimation methods can be applied.}
-}
-
-@inproceedings{gahanWindEstimationUsing2023,
-	title = {Wind Estimation Using an {{H<sub>∞</sub>}} Filter with Fixed-Wing Aircraft Flight Test Results},
-	booktitle = {{{AIAA SciTech}} 2023 {{Forum}}},
-	author = {Gahan, Kenneth and Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2023},
-	month = jan,
-	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {National Harbor, MD},
-	doi = {10.2514/6.2023-2252},
-	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. It is often desired to extract a mean component of the wind the from frequency fluctuations (i.e. turbulence). Commonly, a variation of the Kalman filter is used, with explicit or implicit assumptions about the nature of the random wind velocity. This paper presents an H-infinity (H<sub>∞</sub>) filtering approach to wind estimation which requires no assumptions about the statistics of the process or measurement noise. To specify the wind frequency content of interest a low-pass filter is incorporated. We develop the augmented UAS model in continuous-time, derive the H<sub>∞</sub> filter, and introduce a Kalman filter for comparison. The filters are applied to data gathered during UAS flight tests and validated using a vaned air data unit onboard the aircraft. The H<sub>∞</sub> filter provides quantitatively better estimates of the wind than the Kalman filter, with approximately 50% less root-mean-square (RMS) error in the majority of cases.}
+	address = {San Diego, CA},
+	doi = {10.2514/6.2022-1160},
+	abstract = {Novel techniques are used to identify a nonlinear, quasi-steady, coupled, spin aerodynamic model for a fixed-wing aircraft from flight test data. Orthogonal phase-optimized multisine inputs are used as excitation signals while collecting spinning flight data and a novel vector decomposition of explanatory variables leads to an elegant model structure for spin flight data analysis. Results shows good agreement with validation flight data. This effort was motivated by interest in developing a flight termination system for a fixed-wing unmanned aircraft that controls a descending spiral trajectory toward a designated impact area. The design and tuning of the control law, which is described in a separate paper, benefits from a model of the aircraft dynamics and control authority in the neighborhood of a stable, oscillatory spin.},
+	file = {greshamSpinAerodynamicModeling2022.pdf},
+	image = {greshamSpinAerodynamicModeling2022.jpg}
 }
 
 @inproceedings{greshamFlightTestApproach2022,
@@ -96,7 +50,38 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {San Diego, CA},
 	doi = {10.2514/6.2022-2406},
-	abstract = {A nonlinear energy-based control law was flight tested on a small, fixed-wing unmanned aircraft. This paper summarizes the selected aircraft, instrumentation system, data processing techniques, system identification methods, and the control laws that were implemented. The flight test campaign used a build up approach with increasingly complex computer generated system identification excitations and then increasingly complex control laws. This build up approach allowed the team to overcome technical challenges in a progressive manner and then finally test an advanced nonlinear control law in flight. Automated multistep, frequency sweep, and multisine excitation inputs were implemented for system identification. System identification methods were leveraged to develop linear and nonlinear aerodynamic models. A servoactuator model was developed from ground test data and data processing techniques were used to condition the flight test data for analysis. A proportional-derivative attitude commanded system was implemented and tuned using pilot comments, without the use of an a priori model. A linear quadratic regulator was tuned using the linear aerodynamic model, and refined during flight tests to improve handling qualities. A port-Hamiltonian energy-based nonlinear control law was tuned in simulation using the nonlinear model, and gains refined during flight tests to improve directional tracking and perturbation response. Implementation techniques for automated system identification maneuvers, as well as feedback control using a Pixhawk and Raspberry Pi co-computer are documented and made available by means of a publicly accessible web repository. Flight test results illustrate the utility of the experimental data collection and analysis methods for testing advanced flight control schemes.}
+	abstract = {A nonlinear energy-based control law was flight tested on a small, fixed-wing unmanned aircraft. This paper summarizes the selected aircraft, instrumentation system, data processing techniques, system identification methods, and the control laws that were implemented. The flight test campaign used a build up approach with increasingly complex computer generated system identification excitations and then increasingly complex control laws. This build up approach allowed the team to overcome technical challenges in a progressive manner and then finally test an advanced nonlinear control law in flight. Automated multistep, frequency sweep, and multisine excitation inputs were implemented for system identification. System identification methods were leveraged to develop linear and nonlinear aerodynamic models. A servoactuator model was developed from ground test data and data processing techniques were used to condition the flight test data for analysis. A proportional-derivative attitude commanded system was implemented and tuned using pilot comments, without the use of an a priori model. A linear quadratic regulator was tuned using the linear aerodynamic model, and refined during flight tests to improve handling qualities. A port-Hamiltonian energy-based nonlinear control law was tuned in simulation using the nonlinear model, and gains refined during flight tests to improve directional tracking and perturbation response. Implementation techniques for automated system identification maneuvers, as well as feedback control using a Pixhawk and Raspberry Pi co-computer are documented and made available by means of a publicly accessible web repository. Flight test results illustrate the utility of the experimental data collection and analysis methods for testing advanced flight control schemes.},
+	file = {greshamFlightTestApproach2022.pdf},
+	image = {greshamFlightTestApproach2022.jpg}
+}
+
+@inproceedings{cooperIntelligentWindEstimation2023,
+	title = {Intelligent Wind Estimation for Chemical Source Localization},
+	booktitle = {79th {{Annual Forum}} \& {{Technology Display}}},
+	author = {Cooper, Jared and Hopwood, Jeremy W and Woolsey, Craig A and De Wekker, Stephan F. J. and DeVore, Michael},
+	year = {2023},
+	month = may,
+	pages = {1--20},
+	publisher = {Vertical Flight Society},
+	address = {West Palm Beach, FL},
+	doi = {10.4050/F-0079-2023-18194},
+	abstract = {This paper presents a methodology to sense ambient wind conditions to assist in localizing the source of a released agent using small unmanned aerial systems (sUAS). The release of chemical, biological, radiological, or nuclear (CBRN) agents is a long-standing threat to populated areas and to ecosystems, in general. Such agents could be released intentionally by an adversary, accidentally, or by means of natural disaster. The technology and methods to detect, localize, and model release and dispersion of CBRN agents have been enhanced by integrating cross-disciplinary solutions using advances from sensor design, intelligent signal processing, control systems, vehicle design, chemical modeling, and atmospheric modeling. The miniaturization of sensors and sUAS has enabled the application of sUAS with a chemical sensor payload to detect and localize the source of CBRN agents. In many instances, this chemotaxis operation can be performed faster and more accurately with the addition of atmospheric information, such as ambient wind condition. The paper provides an overview of chemical source localization and current challenges which motivated this work, including operation in complex settings and turbulence. Analysis of these challenges from an atmospheric science perspective is summarized along with strategies to obtain accurate and useful wind estimates that assist in localizing the source quickly and efficiently. A description of the wind estimation approach, based on Bayesian estimation, is provided along with results from simulation studies utilizing realistic vehicle dynamics, wind, turbulence, and chemical plume models.},
+	file = {cooperIntelligentWindEstimation2023.pdf},
+	image = {cooperIntelligentWindEstimation2023.jpg}
+}
+
+@inproceedings{gahanWindEstimationUsing2023,
+	title = {Wind Estimation Using an {{H<sub>∞</sub>}} Filter with Fixed-Wing Aircraft Flight Test Results},
+	booktitle = {{{AIAA SciTech}} 2023 {{Forum}}},
+	author = {Gahan, Kenneth and Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2023},
+	month = jan,
+	publisher = {{American Institute of Aeronautics and Astronautics}},
+	address = {National Harbor, MD},
+	doi = {10.2514/6.2023-2252},
+	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. It is often desired to extract a mean component of the wind the from frequency fluctuations (i.e. turbulence). Commonly, a variation of the Kalman filter is used, with explicit or implicit assumptions about the nature of the random wind velocity. This paper presents an H-infinity (H<sub>∞</sub>) filtering approach to wind estimation which requires no assumptions about the statistics of the process or measurement noise. To specify the wind frequency content of interest a low-pass filter is incorporated. We develop the augmented UAS model in continuous-time, derive the H<sub>∞</sub> filter, and introduce a Kalman filter for comparison. The filters are applied to data gathered during UAS flight tests and validated using a vaned air data unit onboard the aircraft. The H<sub>∞</sub> filter provides quantitatively better estimates of the wind than the Kalman filter, with approximately 50% less root-mean-square (RMS) error in the majority of cases.},
+	file = {gahanWindEstimationUsing2023.pdf},
+	image = {gahanWindEstimationUsing2023.jpg}
 }
 
 @article{greshamRemoteUncorrelatedPilot2023,
@@ -107,19 +92,8 @@
 	volume = {60},
 	number = {3},
 	pages = {955--967},
-	doi = {10.2514/1.C036942}
-}
-
-@inproceedings{greshamSpinAerodynamicModeling2022,
-	title = {Spin Aerodynamic Modeling for a Fixed-Wing Aircraft Using Flight Data},
-	booktitle = {{{AIAA SciTech}} 2022 {{Forum}}},
-	author = {Gresham, James L. and Simmons, Benjamin M. and Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2022},
-	month = jan,
-	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {San Diego, CA},
-	doi = {10.2514/6.2022-1160},
-	abstract = {Novel techniques are used to identify a nonlinear, quasi-steady, coupled, spin aerodynamic model for a fixed-wing aircraft from flight test data. Orthogonal phase-optimized multisine inputs are used as excitation signals while collecting spinning flight data and a novel vector decomposition of explanatory variables leads to an elegant model structure for spin flight data analysis. Results shows good agreement with validation flight data. This effort was motivated by interest in developing a flight termination system for a fixed-wing unmanned aircraft that controls a descending spiral trajectory toward a designated impact area. The design and tuning of the control law, which is described in a separate paper, benefits from a model of the aircraft dynamics and control authority in the neighborhood of a stable, oscillatory spin.}
+	doi = {10.2514/1.C036942},
+	image = {greshamRemoteUncorrelatedPilot2023.jpg}
 }
 
 @article{greshamSpinAerodynamicModeling2024,
@@ -131,7 +105,8 @@
 	number = {1},
 	pages = {128--139},
 	doi = {10.2514/1.C036835},
-	abstract = {Novel techniques are used to identify a nonlinear, quasi-steady, coupled, spin aerodynamic model for a fixed-wing aircraft from flight-test data. Orthogonal phase-optimized multisine inputs are used as excitation signals while collecting spinning flight data. A novel vector decomposition of explanatory variables leads to an elegant model structure for spin flight data analysis. Results show good agreement between model predictions and validation flight data. This effort is motivated by interest in developing a flight termination system for a fixed-wing unmanned aircraft that controls a descending spiral trajectory flight path toward a designated impact area. While investigating the feasibility of a robust control method to guide the spinning trajectory, it was helpful to compare a level flight dynamic model with one of the aircraft dynamics and control authority in the neighborhood of a stable, oscillatory spin. In this paper, a nominal flight aerodynamic model is developed and compared to the stall spin model and the spin model outperforms the nominal model for spinning flight.}
+	abstract = {Novel techniques are used to identify a nonlinear, quasi-steady, coupled, spin aerodynamic model for a fixed-wing aircraft from flight-test data. Orthogonal phase-optimized multisine inputs are used as excitation signals while collecting spinning flight data. A novel vector decomposition of explanatory variables leads to an elegant model structure for spin flight data analysis. Results show good agreement between model predictions and validation flight data. This effort is motivated by interest in developing a flight termination system for a fixed-wing unmanned aircraft that controls a descending spiral trajectory flight path toward a designated impact area. While investigating the feasibility of a robust control method to guide the spinning trajectory, it was helpful to compare a level flight dynamic model with one of the aircraft dynamics and control authority in the neighborhood of a stable, oscillatory spin. In this paper, a nominal flight aerodynamic model is developed and compared to the stall spin model and the spin model outperforms the nominal model for spinning flight.},
+	image = {greshamSpinAerodynamicModeling2024.jpg}
 }
 
 @article{halefomUnsteadyAerodynamicsModelbased2024,
@@ -143,19 +118,8 @@
 	number = {8},
 	pages = {1556--1568},
 	doi = {10.2514/1.G007836},
-	abstract = {This paper examines the value of incorporating unsteady aerodynamics in a model-based wind estimator for a small, fixed-wing aircraft and presents results of an experimental implementation. An extended Kalman filter is designed for two motion models identified from flight data: one that includes unsteady effects and another that does not. An air data unit with wind vanes and a Kiel probe is used to reconstruct the local wind velocity for validation. Analysis of time histories of the wind estimates and the wind estimate error relative to the reconstructed wind velocity shows that the two model-based estimators perform equally well. The power spectral densities of the reconstructed wind and the estimated wind, computed using either estimator, follow Kolmogorov's [Formula: see text] law.}
-}
-
-@inproceedings{hopwoodAeroservoelasticDesignWind2019,
-	title = {Aeroservoelastic Design and Wind Tunnel Testing Using Parameter-Varying Optimal Control and Inertial-Based Sensing},
-	booktitle = {{{AIAA Scitech}} 2019 {{Forum}}},
-	author = {Hopwood, Jeremy W. and Ruskin, Benjamin D. and Broderick, David J. and Wei, Fu-Shang},
-	year = {2019},
-	month = jan,
-	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {San Diego, California},
-	doi = {10.2514/6.2019-0608},
-	abstract = {This research involved the formulation of a binary aeroservoelastic model, design and construction of the associated fixed angle-of-attack cantilever wing, the design of an optimal control system to suppress oscillations throughout the flight envelope, and the testing and analysis of the aeroservoelastic control system in the Central Connecticut State University wind tunnel. This research used oscillatory-unsteady aerodynamics, as opposed to a quasi-steady assumption, as well as a linear-quadratic regulator that was developed to minimize kinetic energy, elastic strain energy, and the input energy. In simulation, this controller displayed a good time response and continued stability past the flutter velocity. Furthermore, this research employed accelerometer/gyroscope state measurement, as opposed to strain-based sensing. Wind tunnel testing showed improved response at lower speeds, yet revealed parameter and delay sensitivity at high airspeeds.}
+	abstract = {This paper examines the value of incorporating unsteady aerodynamics in a model-based wind estimator for a small, fixed-wing aircraft and presents results of an experimental implementation. An extended Kalman filter is designed for two motion models identified from flight data: one that includes unsteady effects and another that does not. An air data unit with wind vanes and a Kiel probe is used to reconstruct the local wind velocity for validation. Analysis of time histories of the wind estimates and the wind estimate error relative to the reconstructed wind velocity shows that the two model-based estimators perform equally well. The power spectral densities of the reconstructed wind and the estimated wind, computed using either estimator, follow Kolmogorov's [Formula: see text] law.},
+	image = {halefomUnsteadyAerodynamicsModelbased2024.jpg}
 }
 
 @inproceedings{hopwoodDevelopmentEvaluationMultirotor2024,
@@ -167,37 +131,38 @@
 	publisher = {{American Institute of Aeronautics and Astronautics}},
 	address = {Orlando, FL},
 	doi = {10.2514/6.2024-1307},
-	abstract = {High-fidelity yet compact nonlinear flight dynamic models for multirotor aircraft are derived from blade-element and momentum theory for use in control, estimation, simulation, and aircraft performance applications. The aim is to obtain models that are valid over a wide range of flight conditions and identifiable from experimental data. Through first- and second-order Taylor series approximations, linear and simplified nonlinear models are also obtained, which can be more readily used for control law and estimator design. The derived models in turn reveal physical principles underlying multirotor aerodynamics. The derived models are used to inform the design of statistically principled experiments to facilitate accurate model identification and to evaluate the relative importance of parameters. The model parameters are identified from high-fidelity simulation data. Finally, the identified model is validated against independent data.}
+	abstract = {High-fidelity yet compact nonlinear flight dynamic models for multirotor aircraft are derived from blade-element and momentum theory for use in control, estimation, simulation, and aircraft performance applications. The aim is to obtain models that are valid over a wide range of flight conditions and identifiable from experimental data. Through first- and second-order Taylor series approximations, linear and simplified nonlinear models are also obtained, which can be more readily used for control law and estimator design. The derived models in turn reveal physical principles underlying multirotor aerodynamics. The derived models are used to inform the design of statistically principled experiments to facilitate accurate model identification and to evaluate the relative importance of parameters. The model parameters are identified from high-fidelity simulation data. Finally, the identified model is validated against independent data.},
+	image = {hopwoodDevelopmentEvaluationMultirotor2024.jpg}
 }
 
-@misc{hopwoodFlightDynamicModeling2024,
-	type = {Seminar},
-	title = {Flight {{Dynamic Modeling}} and {{Control}} for {{Fixed-Wing UAVs}} in {{Stall Spins}}},
-	author = {Hopwood, Jeremy W. and Gresham, James L.},
+@inproceedings{gahanUncertaintyWindEstimatesPart1Analysis2024,
+	title = {Uncertainty in Wind Estimates, Part 1: {{Analysis}} Using Generalized Polynomial Chaos},
+	shorttitle = {Uncertainty in Wind Estimates, Part 1},
+	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
+	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
 	year = {2024},
-	month = aug,
-	address = {FAA, New and Emerging Aviation Technologies (NEAT)},
-	abstract = {This presentation focuses on aerodynamic modeling and control of fixed-wing aircraft in stall spins. A nonlinear, coupled, quasi-stead aerodynamic model was developed and identified from flight test data alone. A novel vector decomposition of explanatory variables was used to accurately capture spin dynamics, leading to an identified model that shows good agreement between predictions and validation flight data. A robust control law was also developed as a flight termination sequence for unmanned aircraft systems that guides the spinning descent along a desired path. Two control objectives are achieved in parallel using a heading-periodic linear quadratic regulator and a robust H-infinity controller. The control law is shown to perform well both in simulation and flight tests despite unknown disturbances and modeling errors.}
-}
-
-@misc{hopwoodGeometricStochasticNonlinear2025,
-	type = {Seminar},
-	title = {Geometric and {{Stochastic Nonlinear Observers}}: {{Estimating Wind}} from {{Aircraft Motion}} in {{Uncertain Environments}}},
-	author = {Hopwood, Jeremy W.},
-	year = {2025},
 	month = jan,
-	address = {University of Florida, Department of Mechanical and Aerospace Engineering seminar series},
-	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation to motivate the development of a symmetry-preserving reduced-order observer and its extension to stochastic differential equations. This new theory addresses limitations of prior methods by providing rigorous stability guarantees, even in uncertain environments, enabling safety-critical wind estimation. Accurate modeling of vehicle dynamics across the full flight envelope is integral to these efforts. The seminar also highlights a new approach to deriving and identifying high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, facilitating nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. This seminar offers insight into cutting-edge techniques for understanding and estimating aircraft dynamics in challenging environmental and operational conditions.}
+	publisher = {{American Institute of Aeronautics and Astronautics}},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2024-2824},
+	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. While many indirect estimation approaches achieve desirable accuracy under the assumption of known system parameters, the effect of parametric uncertainty on wind estimate precision is important and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to re-cast the dynamics of a system with non-deterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and characterizing the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case presented here, gPC exhibits a computational advantage over Monte Carlo sampling-based methods and produces a deterministic system upon which control and estimation methods can be applied.},
+	file = {gahanUncertaintyWindEstimatesPart1Analysis2024.pdf},
+	image = {gahanUncertaintyWindEstimatesPart1Analysis2024.jpg}
 }
 
-@misc{hopwoodGeometricStochasticNonlinear2025a,
-	type = {Seminar},
-	title = {Geometric and {{Stochastic Nonlinear Observers}}: {{Estimating Wind}} from {{Aircraft Motion}} in {{Uncertain Environments}}},
-	author = {Hopwood, Jeremy W.},
-	year = {2025},
-	month = mar,
-	address = {Mississippi State University, Department of Aerospace Engineering seminar series},
-	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation to motivate the development of a symmetry-preserving reduced-order observer and its extension to stochastic differential equations. This new theory addresses limitations of prior methods by providing rigorous stability guarantees, even in uncertain environments, enabling safety-critical wind estimation. Accurate modeling of vehicle dynamics across the full flight envelope is integral to these efforts. The seminar also highlights a new approach to deriving and identifying high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, facilitating nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. This seminar offers insight into cutting-edge techniques for understanding and estimating aircraft dynamics in challenging environmental and operational conditions.}
+@inproceedings{gahanUncertaintyWindEstimatesPart2Filtering2024,
+	title = {Uncertainty in Wind Estimates, Part 2: {{H<sub>∞</sub>}} Filtering Using Generalized Polynomial Chaos},
+	shorttitle = {Uncertainty in Wind Estimates, Part 2},
+	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
+	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2024},
+	month = jan,
+	publisher = {{American Institute of Aeronautics and Astronautics}},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2024-2825},
+	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing air vehicle sensors along with a dynamic model of the UAS augmented with additional wind-related states. While many estimation approaches achieve desirable accuracy under the assumption of known system parameters, reducing the effect of parametric uncertainty on wind estimate precision is desirable and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to re-cast the dynamics of a system with non-deterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and improving the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case presented, a gPC H-infinity (H<sub>∞</sub>) filter shows superiority over a nominal H<sub>∞</sub> filter in terms of variance in estimates due to model parametric uncertainty. The error due to parametric uncertainty, as characterized by the variance in estimates from the mean, is reduced by an average of ~25%.},
+	file = {gahanUncertaintyWindEstimatesPart2Filtering2024.pdf},
+	image = {gahanUncertaintyWindEstimatesPart2Filtering2024.jpg}
 }
 
 @techreport{hopwoodLargedomainNonlinearSystem2024,
@@ -211,40 +176,6 @@
 	abstract = {High-fidelity, nonlinear flight dynamic models for multirotor aircraft important for the advancement of weather-tolerant advanced air mobility operations. The accuracy of these models directly affects the validity of safety and performance guarantees for guidance, navigation, and control algorithms. This paper presents a modeling and system identification approach for multirotor aerial vehicles. Lumped-parameter aerodynamics are obtained for an isolated rotor using blade-element and momentum theory, which are then incorporated into a six degree-of-freedom model for the multirotor aircraft. Critically, the obtained model is valid over a wide range of flight conditions, while also being identifiable from experimental data. Using a high-fidelity simulation constructed from wind tunnel data, the relative importance of model parameters is evaluated. This process then informs the final statistical estimation of model parameters.}
 }
 
-@misc{hopwoodModelIdentificationState2024,
-	type = {Seminar},
-	title = {Model {{Identification}}, {{State Estimation}}, and {{Control}} of {{Aircraft}} in {{Turbulent}} and {{Off-Nominal Conditions}}},
-	author = {Hopwood, Jeremy W.},
-	year = {2024},
-	month = mar,
-	address = {University of Maryland, Department of Aerospace Engineering seminar series},
-	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and operational capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (i.e. without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation and then the development of a nonlinear, passivity-based wind observer to overcome limitations of previous approaches. A key ingredient to these efforts is the model of the vehicle dynamics, which must be valid and accurate across the entire prescribed flight envelope. Accordingly, the talk will also involve to the derivation and identification approach of high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, enabling nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. Overall, this seminar sheds light on cutting-edge techniques for understanding and estimating the dynamics of aircraft in challenging environmental and operational conditions.}
-}
-
-@inproceedings{hopwoodNoisetostateStableSymmetrypreserving2025,
-	title = {A Noise-to-State Stable Symmetry-Preserving Reduced-Order Observer for Wind Estimation},
-	booktitle = {{{AIAA SciTech}} 2025 {{Forum}}},
-	author = {Hopwood, Jeremy W and Woolsey, Craig A},
-	year = {2025},
-	month = jan,
-	address = {Orlando, FL},
-	doi = {10.2514/6.2025-1625},
-	abstract = {Inferring wind velocity from aircraft motion is an enabling technology that can be used for synthetic air data systems, path planning, safety monitoring, and atmospheric science. This paper presents a reduced-order nonlinear wind observer applicable to uncertain aircraft models in turbulent wind. The aircraft dynamics are formulated as a stochastic differential equation that is invariant under the action of a Lie group. The proposed observer leverages this symmetry to achieve linear error dynamics that are shown to be noise-to-state stable in probability. A Monte-Carlo simulation of a nonlinear multirotor aircraft model is conducted to demonstrate the probabilistic guarantees and evaluate their conservatism.},
-	file = {hopwoodNoisetostateStableSymmetrypreserving2025.pdf}
-}
-
-@inproceedings{hopwoodNonlinearWindEstimation2025,
-	title = {Nonlinear Wind Estimation Using a Symmetry-Preserving Reduced-Order Observer},
-	booktitle = {{{AIAA SciTech}} 2025 {{Forum}}},
-	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2025},
-	month = jan,
-	address = {Orlando, FL},
-	doi = {10.2514/6.2025-1626},
-	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric research. This paper presents a novel nonlinear observer for wind estimation, leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential stability guarantees. By only estimating the unmeasured wind and air-relative velocity, the reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption, reformulating the nonlinear wind estimation problem into the design of a linear, time-varying observer. Simulations with a nonlinear multirotor aircraft model demonstrate the observer's robustness to turbulence and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.},
-	file = {hopwoodNonlinearWindEstimation2025.pdf}
-}
-
 @techreport{hopwoodPassivitybasedWindEstimation2023a,
 	type = {Student {{Research Conference}}},
 	title = {Passivity-Based Wind Estimation Using Aircraft},
@@ -254,56 +185,6 @@
 	address = {Newport News, VA},
 	institution = {Virginia Space Grant Consortium},
 	abstract = {This paper presents the development and simulation of a global nonlinear passivity-based observer for aircraft in wind. Wind estimates are vital to the expansion of urban air mobility operations by contributing to model-based atmospheric predictions as well as vehicle-level systems for improved weather tolerance and safety. Traditional approaches to wind estimation rely on linearization of the flight dynamics and thus are only valid near a nominal flight condition. For operations across the flight envelope in a wide variety of wind conditions, a more global result must be obtained. This paper specializes existing passivity-based observer theory to aircraft in wind. The main results of this paper give explicit formulas for necessary gains as well as a linear matrix inequality that can be used to optimize wind estimate convergence. The developed wind observer is implemented on simulation data and shows good performance even when assumptions are violated, indicating its robustness.}
-}
-
-@inproceedings{hopwoodPassivitybasedWindEstimation2024,
-	title = {Passivity-Based Wind Estimation for Aircraft Maneuvering in Steady and Uniform Wind Fields},
-	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
-	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2024},
-	month = jan,
-	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {Orlando, FL},
-	doi = {10.2514/6.2024-2654},
-	abstract = {Wind measurements in the lower atmosphere are vital to the expansion of air mobility operations, providing boundary condition data for numerical weather models and supporting planning and control systems for improved weather tolerance and safety. Traditional approaches to wind estimation from flight data rely on linearization of the flight dynamic model and are therefore only valid near the nominal flight condition. To obtain accurate wind estimates in maneuvering flight, this ``small perturbations'' restriction must be relaxed. This paper presents the design and simulation of a nonlinear, passivity-based observer for aircraft in wind with global exponential convergence guarantees. The main results include explicit formulas for implementing the observer as well as a linear matrix inequality that can be used to optimize wind estimate convergence. The wind observer is implemented using flight test data, demonstrating good performance even in maneuvering flight through turbulent air.},
-	file = {hopwoodPassivitybasedWindEstimation2024.pdf}
-}
-
-@article{hopwoodPracticalNonlinearFlight2025,
-	title = {Practical nonlinear flight dynamic modeling for multirotor aircraft},
-	author = {Hopwood, Jeremy W. and Simmons, Benjamin M. and Cooper, Jared K. and Woolsey, Craig A.},
-	year = 2025,
-	month = dec,
-	journal = {Journal of Aircraft},
-	doi = {10.2514/1.C038103},
-  	volume = {Articles In Advance},
-  	publisher = {{American Institute of Aeronautics and Astronautics}},
-	abstract = {High-fidelity yet compact nonlinear flight dynamic models for multirotor aircraft are derived from blade-element and momentum theory for use in control, estimation, simulation, and aircraft performance applications. The aim is to obtain models that are valid over a wide range of flight conditions and identifiable from experimental data. Individual rotor force and moment models along with airframe aerodynamics and motor inertial effects are incorporated into a generic nonlinear model for multirotor aircraft. Simplifications of the derived model are explored through additional assumptions as well as Taylor series approximations. The simplified flight dynamics models can be more readily identified from experimental data and used for control law and estimator design. The derived models in turn reveal physical principles underlying multirotor flight dynamics. A simulation study is conducted in which the derived models are used to inform the design of statistically principled experiments to facilitate accurate model identification. Using a high-fidelity simulation constructed from wind tunnel data, the relative importance of model parameters is evaluated. This process informs the estimation of model parameters, which are then used to quantify the contribution of model terms across common flight conditions.}
-}
-
-@inproceedings{hopwoodRobustLinearParametervarying2024,
-	title = {Robust Linear Parameter-Varying Control for Safe and Effective Unstable Aircraft System Identification},
-	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
-	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2024},
-	month = jan,
-	publisher = {{American Institute of Aeronautics and Astronautics}},
-	address = {Orlando, FL},
-	doi = {10.2514/6.2024-1305},
-	abstract = {Large domain, accurate flight dynamic models with well-characterized uncertainty are often required for estimation and control of unmanned air vehicles. For unstable aircraft, identifying these models is a challenging task. Stabilizing controllers tend to suppress important dynamics, amplify artificial dynamics, and introduce correlation. For large domain model identification requiring large-amplitude excitation, there is often no stability guarantee, greatly increasing risk. To develop a model that covers the desired flight envelope, a two-phase data collection approach is taken where using a simple baseline controller, a set of linear, time-invariant models are identified about flight conditions that define the vertices of an uncertain polytopic linear parameter-varying (LPV) system. A robust LPV control law is then synthesized to stabilize the system with an H<sub>∞</sub> norm bound guarantee, allowing for excitation over a large domain for nonlinear system identification. This modeling approach is applied to a small quadrotor aircraft whose motion is robustly stabilized about a slowly varying reference velocity, which serves as the LPV scheduling parameter. The performance objective is chosen to allow sufficient excitation for nonlinear system identification while maintaining robust stability, thus allowing for higher-amplitude excitation signals to safely and effectively excite the aircraft dynamics over a large domain. The control law is demonstrated by simulating the LPV model identified from flight data.},
-	file = {hopwoodRobustLinearParametervarying2024.pdf}
-}
-
-@article{hopwoodRobustStallSpin2023,
-	title = {Robust Stall Spin Flight Path Control with Flight Test Validation},
-	author = {Hopwood, Jeremy W. and Gresham, James L. and Woolsey, Craig A.},
-	year = {2023},
-	month = mar,
-	journal = {Journal of Guidance, Control, and Dynamics},
-	volume = {46},
-	number = {3},
-	pages = {553--559},
-	doi = {10.2514/1.G007016}
 }
 
 @inproceedings{hopwoodStallSpinFlight2022,
@@ -316,41 +197,49 @@
 	address = {San Diego, CA},
 	doi = {10.2514/6.2022-1159},
 	abstract = {This paper presents the development and simulation of a robust, periodic linear control law to direct a fixed-wing unmanned aircraft in a stall spin along a desired path. As a flight termination sequence, a spin dissipates energy in a stable, controlled manner. Because control deflections are required to initiate and maintain such a spin, it may be possible, and desirable, to guide the aircraft toward a specific impact location by tilting the, otherwise vertical, axis of the spinning descent. Through augmentation of the dynamics with a measure of velocity vector direction error and the exploitation of a steady spin rate, a yaw-periodic linear quadratic regulator is designed to direct the spin. Then, a robust H-infinity controller is designed for a reduced set of aircraft states and implemented in parallel to robustly maintain the spin in the presence of exogenous disturbances and modeling errors. The combination of the two controllers is shown through simulation of the nonlinear closed-loop system to robustly follow a desired path in the presence of modeling errors and external disturbances.},
-	file = {hopwoodStallSpinFlight2022.pdf}
+	file = {hopwoodStallSpinFlight2022.pdf},
+	image = {hopwoodStallSpinFlight2022.jpg}
 }
 
-@inproceedings{hopwoodSymmetrypreservingReducedorderObserver2025,
-	title = {A Symmetry-Preserving Reduced-Order Observer},
-	booktitle = {2025 {{American Control Conference}} {{(ACC)}}},
-	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
-	year = {2025},
-	month = jul,
-	address = {Denver, CO},
-	pages = {2490--2496},
-	doi = {10.23919/ACC63710.2025.11107972},
-	abstract = {A symmetry-preserving, reduced-order state observer is presented for the unmeasured part of a system's state, where the nonlinear system dynamics exhibit symmetry under the action of a Lie group. Leveraging this symmetry with a moving frame, the observer dynamics are constructed such that they are invariant under the Lie group's action. Sufficient conditions for the observer to be asymptotically stable are developed by studying the stability of an invariant error system. As an illustrative example, the observer is applied to the problem of rigid-body velocity estimation, which demonstrates how exploiting the symmetry of the system can simplify the stabilization of the estimation error dynamics.},
-	file = {hopwoodSymmetrypreservingReducedorderObserver2025.pdf}
-}
-
-@article{hopwoodSymmetrypreservingReducedorderWind2025,
-	title = {Symmetry-Preserving Reduced-Order Wind Observers with Flight Test Results},
-	author = {Hopwood, Jeremy W. and Simmons, Benjamin M. and Woolsey, Craig A.},
-	year = {2025},
+@article{hopwoodRobustStallSpin2023,
+	title = {Robust Stall Spin Flight Path Control with Flight Test Validation},
+	author = {Hopwood, Jeremy W. and Gresham, James L. and Woolsey, Craig A.},
+	year = {2023},
+	month = mar,
 	journal = {Journal of Guidance, Control, and Dynamics},
-	pages = {In Review},
-	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric science. This paper presents a novel nonlinear observer for wind estimation, leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential stability guarantees. By only estimating the unmeasured wind and air-relative velocity, the reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption yet casts the nonlinear wind estimation problem as the design of a linear, time-varying observer. Simulations and flight test results demonstrate the observer's robustness to unmodeled turbulence, aerodynamic modeling error, and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.}
+	volume = {46},
+	number = {3},
+	pages = {553--559},
+	doi = {10.2514/1.G007016},
+	image = {hopwoodRobustStallSpin2023.jpg}
 }
 
-@article{medinaEvaluationDopplerWind2025,
-	title = {Evaluation of {{Doppler}} Wind Lidar for Advanced Air Mobility},
-	author = {Medina, Adam and Mitchell, Zackary and Willhite, Tyler and Hopwood, Jeremy W. and Pande, Charvi and De Wekker, Stephan F. J. and Woolsey, Craig and Renshaw, Kyle and Koch, Grady J.},
-	year = {2025},
+@inproceedings{hopwoodPassivitybasedWindEstimation2024,
+	title = {Passivity-Based Wind Estimation for Aircraft Maneuvering in Steady and Uniform Wind Fields},
+	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
+	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2024},
 	month = jan,
-	journal = {Journal of Applied Remote Sensing},
-	volume = {19},
-	number = {01},
-	doi = {10.1117/1.JRS.19.014509},
-	abstract = {Understanding wind conditions is critical for the NASA Advanced Air Mobility (AAM) mission. The types of aircraft, and the region of the atmosphere they operate in, make them highly susceptible to wind effects. We demonstrate the feasibility of using wind lidar to measure wind dynamics for the AAM mission. Wind vector measurements from two Doppler wind lidars using dual-Doppler techniques are compared with in situ measurements from a ground-based sonic anemometer and small uninhabited aircraft systems (sUAS). Both lidar beams intersected directly above a sonic anemometer and measurements were compared. The resulting root mean square error values between the two instruments' speed and direction measurements were 1.72 m/s and 23.05 deg, respectively. Following this test, a dual-Doppler scan pattern which measured wind vectors along a vertical column was performed while a sUAS measured wind vectors along the scanned volume for comparison. The wind profiles from the two measurement techniques are consistent and demonstrate the potential of using Doppler lidar for AAM.}
+	publisher = {{American Institute of Aeronautics and Astronautics}},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2024-2654},
+	abstract = {Wind measurements in the lower atmosphere are vital to the expansion of air mobility operations, providing boundary condition data for numerical weather models and supporting planning and control systems for improved weather tolerance and safety. Traditional approaches to wind estimation from flight data rely on linearization of the flight dynamic model and are therefore only valid near the nominal flight condition. To obtain accurate wind estimates in maneuvering flight, this ``small perturbations'' restriction must be relaxed. This paper presents the design and simulation of a nonlinear, passivity-based observer for aircraft in wind with global exponential convergence guarantees. The main results include explicit formulas for implementing the observer as well as a linear matrix inequality that can be used to optimize wind estimate convergence. The wind observer is implemented using flight test data, demonstrating good performance even in maneuvering flight through turbulent air.},
+	file = {hopwoodPassivitybasedWindEstimation2024.pdf},
+	image = {hopwoodPassivitybasedWindEstimation2024.jpg}
+}
+
+@inproceedings{hopwoodRobustLinearParametervarying2024,
+	title = {Robust Linear Parameter-Varying Control for Safe and Effective Unstable Aircraft System Identification},
+	booktitle = {{{AIAA SciTech}} 2024 {{Forum}}},
+	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2024},
+	month = jan,
+	publisher = {{American Institute of Aeronautics and Astronautics}},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2024-1305},
+	abstract = {Large domain, accurate flight dynamic models with well-characterized uncertainty are often required for estimation and control of unmanned air vehicles. For unstable aircraft, identifying these models is a challenging task. Stabilizing controllers tend to suppress important dynamics, amplify artificial dynamics, and introduce correlation. For large domain model identification requiring large-amplitude excitation, there is often no stability guarantee, greatly increasing risk. To develop a model that covers the desired flight envelope, a two-phase data collection approach is taken where using a simple baseline controller, a set of linear, time-invariant models are identified about flight conditions that define the vertices of an uncertain polytopic linear parameter-varying (LPV) system. A robust LPV control law is then synthesized to stabilize the system with an H<sub>∞</sub> norm bound guarantee, allowing for excitation over a large domain for nonlinear system identification. This modeling approach is applied to a small quadrotor aircraft whose motion is robustly stabilized about a slowly varying reference velocity, which serves as the LPV scheduling parameter. The performance objective is chosen to allow sufficient excitation for nonlinear system identification while maintaining robust stability, thus allowing for higher-amplitude excitation signals to safely and effectively excite the aircraft dynamics over a large domain. The control law is demonstrated by simulating the LPV model identified from flight data.},
+	file = {hopwoodRobustLinearParametervarying2024.pdf},
+	image = {hopwoodRobustLinearParametervarying2024.jpg}
 }
 
 @inproceedings{smithUASbasedRadioFrequency2024,
@@ -363,16 +252,176 @@
 	address = {Long Beach, CA},
 	doi = {10.33012/2024.19570},
 	abstract = {This paper describes the development, implementation, and testing of a GNSS jammer localizer using power measurement profiles collected during un-crewed aerial system (UAS) fly-bys. A linearized measurement equation based on the Friis power transmission formula is derived in which RF channel propagation parameters are grouped into a single parameter for estimation. Synchronized power and UAS position measurements are processed in a batch-type sequential non-linear least squares algorithm for simultaneous estimation of static jammer position and received power model parameters. We develop a low size, weight, power, and cost (SWAP-C) quad-rotor UAS test bed that can collect and time-stamp power measurements with UAS position. Since GNSS jamming is illegal, a LoRa 868 MHz transmitter is used as a surrogate GNSS jammer during field testing -- providing Received Signal Strength Indicator (RSSI) measurements to the LoRa receiver onboard the UAS. Testing is conducted at the Virginia Tech Kentland Experimental Aerial Systems Lab, where emitter localization is evaluated for three different trajectories. Experimental performance analysis suggests that meter-level localization accuracy is achievable with prior knowledge on source location and by accounting for antenna gain pattern variations over time in the estimation process with a first order Gauss Markov Process.},
-	file = {smithUASbasedRadioFrequency2024.pdf}
+	file = {smithUASbasedRadioFrequency2024.pdf},
+	image = {smithUASbasedRadioFrequency2024.jpg}
+}
+
+@misc{hopwoodModelIdentificationState2024,
+	type = {Seminar},
+	title = {Model {{Identification}}, {{State Estimation}}, and {{Control}} of {{Aircraft}} in {{Turbulent}} and {{Off-Nominal Conditions}}},
+	author = {Hopwood, Jeremy W.},
+	year = {2024},
+	month = mar,
+	address = {University of Maryland, Department of Aerospace Engineering seminar series},
+	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and operational capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (i.e. without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation and then the development of a nonlinear, passivity-based wind observer to overcome limitations of previous approaches. A key ingredient to these efforts is the model of the vehicle dynamics, which must be valid and accurate across the entire prescribed flight envelope. Accordingly, the talk will also involve to the derivation and identification approach of high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, enabling nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. Overall, this seminar sheds light on cutting-edge techniques for understanding and estimating the dynamics of aircraft in challenging environmental and operational conditions.},
+	image = {UMD.webp}
+}
+
+@misc{hopwoodFlightDynamicModeling2024,
+	type = {Seminar},
+	title = {Flight {{Dynamic Modeling}} and {{Control}} for {{Fixed-Wing UAVs}} in {{Stall Spins}}},
+	author = {Hopwood, Jeremy W. and Gresham, James L.},
+	year = {2024},
+	month = aug,
+	address = {FAA, New and Emerging Aviation Technologies (NEAT)},
+	abstract = {This presentation focuses on aerodynamic modeling and control of fixed-wing aircraft in stall spins. A nonlinear, coupled, quasi-stead aerodynamic model was developed and identified from flight test data alone. A novel vector decomposition of explanatory variables was used to accurately capture spin dynamics, leading to an identified model that shows good agreement between predictions and validation flight data. A robust control law was also developed as a flight termination sequence for unmanned aircraft systems that guides the spinning descent along a desired path. Two control objectives are achieved in parallel using a heading-periodic linear quadratic regulator and a robust H-infinity controller. The control law is shown to perform well both in simulation and flight tests despite unknown disturbances and modeling errors.},
+	image = {FAA.jpg}
+}
+
+@misc{hopwoodGeometricStochasticNonlinear2025,
+	type = {Seminar},
+	title = {Geometric and {{Stochastic Nonlinear Observers}}: {{Estimating Wind}} from {{Aircraft Motion}} in {{Uncertain Environments}}},
+	author = {Hopwood, Jeremy W.},
+	year = {2025},
+	month = jan,
+	address = {University of Florida, Department of Mechanical and Aerospace Engineering seminar series},
+	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation to motivate the development of a symmetry-preserving reduced-order observer and its extension to stochastic differential equations. This new theory addresses limitations of prior methods by providing rigorous stability guarantees, even in uncertain environments, enabling safety-critical wind estimation. Accurate modeling of vehicle dynamics across the full flight envelope is integral to these efforts. The seminar also highlights a new approach to deriving and identifying high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, facilitating nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. This seminar offers insight into cutting-edge techniques for understanding and estimating aircraft dynamics in challenging environmental and operational conditions.},
+	image = {UF.jpg}
+}
+
+@misc{hopwoodGeometricStochasticNonlinear2025a,
+	type = {Seminar},
+	title = {Geometric and {{Stochastic Nonlinear Observers}}: {{Estimating Wind}} from {{Aircraft Motion}} in {{Uncertain Environments}}},
+	author = {Hopwood, Jeremy W.},
+	year = {2025},
+	month = mar,
+	address = {Mississippi State University, Department of Aerospace Engineering seminar series},
+	abstract = {Assured performance of control laws, state estimation algorithms, and dynamic model predictions is crucial for enhancing the safety and capability of aircraft, particularly in turbulent and off-nominal conditions. A key component to the expansion of advanced air mobility is the ability to indirectly measure wind (without specialized sensors) for assimilation in path planning algorithms, numerical weather models, control systems, safety monitoring, and more. The discussion begins with an overview of model-based wind estimation to motivate the development of a symmetry-preserving reduced-order observer and its extension to stochastic differential equations. This new theory addresses limitations of prior methods by providing rigorous stability guarantees, even in uncertain environments, enabling safety-critical wind estimation. Accurate modeling of vehicle dynamics across the full flight envelope is integral to these efforts. The seminar also highlights a new approach to deriving and identifying high-fidelity, compact, nonlinear flight dynamic models for multirotor aircraft, facilitating nonlinear control and estimation across a wide range of flight conditions. Practical implementations and performance evaluations based on flight test data underscore the performance and mathematical guarantees of these methodologies in real-world scenarios. This seminar offers insight into cutting-edge techniques for understanding and estimating aircraft dynamics in challenging environmental and operational conditions.},
+	image = {MSU.jpg}
+}
+
+@inproceedings{hopwoodSymmetrypreservingReducedorderObserver2025,
+	title = {A Symmetry-Preserving Reduced-Order Observer},
+	booktitle = {2025 {{American Control Conference}} {{(ACC)}}},
+	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2025},
+	month = jul,
+	address = {Denver, CO},
+	pages = {2490--2496},
+	doi = {10.23919/ACC63710.2025.11107972},
+	abstract = {A symmetry-preserving, reduced-order state observer is presented for the unmeasured part of a system's state, where the nonlinear system dynamics exhibit symmetry under the action of a Lie group. Leveraging this symmetry with a moving frame, the observer dynamics are constructed such that they are invariant under the Lie group's action. Sufficient conditions for the observer to be asymptotically stable are developed by studying the stability of an invariant error system. As an illustrative example, the observer is applied to the problem of rigid-body velocity estimation, which demonstrates how exploiting the symmetry of the system can simplify the stabilization of the estimation error dynamics.},
+	file = {hopwoodSymmetrypreservingReducedorderObserver2025.pdf},
+	image = {hopwoodSymmetrypreservingReducedorderObserver2025.jpg}
+}
+
+@article{medinaEvaluationDopplerWind2025,
+	title = {Evaluation of {{Doppler}} Wind Lidar for Advanced Air Mobility},
+	author = {Medina, Adam and Mitchell, Zackary and Willhite, Tyler and Hopwood, Jeremy W. and Pande, Charvi and De Wekker, Stephan F. J. and Woolsey, Craig and Renshaw, Kyle and Koch, Grady J.},
+	year = {2025},
+	month = jan,
+	journal = {Journal of Applied Remote Sensing},
+	volume = {19},
+	number = {01},
+	doi = {10.1117/1.JRS.19.014509},
+	abstract = {Understanding wind conditions is critical for the NASA Advanced Air Mobility (AAM) mission. The types of aircraft, and the region of the atmosphere they operate in, make them highly susceptible to wind effects. We demonstrate the feasibility of using wind lidar to measure wind dynamics for the AAM mission. Wind vector measurements from two Doppler wind lidars using dual-Doppler techniques are compared with in situ measurements from a ground-based sonic anemometer and small uninhabited aircraft systems (sUAS). Both lidar beams intersected directly above a sonic anemometer and measurements were compared. The resulting root mean square error values between the two instruments' speed and direction measurements were 1.72 m/s and 23.05 deg, respectively. Following this test, a dual-Doppler scan pattern which measured wind vectors along a vertical column was performed while a sUAS measured wind vectors along the scanned volume for comparison. The wind profiles from the two measurement techniques are consistent and demonstrate the potential of using Doppler lidar for AAM.},
+	file = {medinaEvaluationDopplerWind2025.pdf},
+	image = {medinaEvaluationDopplerWind2025.jpg}
 }
 
 @phdthesis{hopwoodNonlinearObserversAircraft2025,
-  title = {Nonlinear {{Observers}} for {{Aircraft Maneuvering}} in {{Wind}}},
-  author = {Hopwood, Jeremy W},
-  year = {2025},
-  month = apr,
-  address = {Blacksburg, VA},
-  url = {https://hdl.handle.net/10919/133533},
-  school = {Virginia Polytechnic Institute and State University},
-  file = {hopwoodNonlinearObserversAircraft2025.pdf}
+	title = {Nonlinear {{Observers}} for {{Aircraft Maneuvering}} in {{Wind}}},
+	author = {Hopwood, Jeremy W},
+	year = {2025},
+	month = apr,
+	address = {Blacksburg, VA},
+	url = {https://hdl.handle.net/10919/133533},
+	school = {Virginia Polytechnic Institute and State University},
+	file = {hopwoodNonlinearObserversAircraft2025.pdf},
+	image = {Vertical_VT_Full_Color_RGB.jpg}
+}
+
+@inproceedings{hopwoodNoisetostateStableSymmetrypreserving2025,
+	title = {A Noise-to-State Stable Symmetry-Preserving Reduced-Order Observer for Wind Estimation},
+	booktitle = {AIAA SciTech 2025 Forum},
+	author = {Hopwood, Jeremy W and Woolsey, Craig A},
+	year = 2025,
+	month = jan,
+	pages = {1--20},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2025-1625},
+	abstract = {Inferring wind velocity from aircraft motion is an enabling technology that can be used for synthetic air data systems, path planning, safety monitoring, and atmospheric science. This paper presents a reduced-order nonlinear wind observer applicable to uncertain aircraft models in turbulent wind. The aircraft dynamics are formulated as a stochastic differential equation that is invariant under the action of a Lie group. The proposed observer leverages this symmetry to achieve linear error dynamics that are shown to be noise-to-state stable in probability. A Monte-Carlo simulation of a nonlinear multirotor aircraft model is conducted to demonstrate the probabilistic guarantees and evaluate their conservatism.},
+	file = {hopwoodNoisetostateStableSymmetrypreserving2025.pdf},
+	image = {hopwoodNoisetostateStableSymmetrypreserving2025.jpg}
+}
+
+@inproceedings{hopwoodNonlinearWindEstimation2025,
+	title = {Nonlinear Wind Estimation Using a Symmetry-Preserving Reduced-Order Observer},
+	booktitle = {AIAA SciTech 2025 Forum},
+	author = {Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = 2025,
+	month = jun,
+	pages = {1--17},
+	address = {Orlando, FL},
+	doi = {10.2514/6.2025-1626},
+	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric research. This paper presents a novel nonlinear observer for wind estimation, leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential stability guarantees. By only estimating the unmeasured wind and air-relative velocity, the reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption, reformulating the nonlinear wind estimation problem into the design of a linear, time-varying observer. Simulations with a nonlinear multirotor aircraft model demonstrate the observer's robustness to turbulence and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.},
+	file = {hopwoodNonlinearWindEstimation2025.pdf},
+	image = {hopwoodNonlinearWindEstimation2025.jpg}
+}
+
+@article{gahanModelbasedWindEstimation2025,
+	title = {Model-Based Wind Estimation Using {{H<sub>∞</sub>}} Filtering with Flight-Test Results},
+	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = {2025},
+	month = mar,
+	journal = {Journal of Guidance, Control, and Dynamics},
+	volume = {48},
+	number = {3},
+	pages = {630--637},
+	doi = {10.2514/1.G007735},
+	image = {gahanModelbasedWindEstimation2025.jpg}
+}
+
+@article{gahanWindEstimateUncertainty2026,
+	title = {Wind Estimate Uncertainty Quantification and Sensitivity Analysis Using Generalized Polynomial Chaos},
+	author = {Gahan, Kenneth C. and Hopwood, Jeremy W. and Woolsey, Craig A.},
+	year = 2026,
+	month = mar,
+	journal = {Journal of Guidance, Control, and Dynamics},
+	volume = {49},
+	number = {3},
+	pages = {806--818},
+	issn = {0731-5090, 1533-3884},
+	doi = {10.2514/1.G008513},
+	abstract = {Indirect wind estimation onboard unmanned aerial systems (UASs) can be accomplished using existing onboard sensors along with a dynamic model of the UAS augmented with additional wind-related states. Although many indirect estimation approaches achieve desirable accuracy under the assumption of known system parameters, the effect of parametric uncertainty on wind estimate precision is important and has not been thoroughly investigated. This paper describes the theory and process for using generalized polynomial chaos (gPC) to recast the dynamics of a system with nondeterministic parameters as a deterministic system. The concepts are applied to the problem of wind estimation and to characterizing the precision of wind estimates over time due to known parametric uncertainties. In the multivariate case, gPC exhibits a computational advantage over Monte Carlo sampling-based methods and produces a deterministic system upon which control and estimation methods can be applied.},
+	image = {gahanWindEstimateUncertainty2026.jpg}
+}
+
+@article{hopwoodPracticalNonlinearFlight2026,
+	title = {Practical Nonlinear Flight Dynamic Modeling for Multirotor Aircraft},
+	author = {Hopwood, Jeremy W. and Simmons, Benjamin M. and Woolsey, Craig A. and Cooper, Jared K.},
+	year = 2026,
+	month = may,
+	journal = {Journal of Aircraft},
+	volume = {63},
+	number = {3},
+	pages = {1283--1298},
+	issn = {0021-8669, 1533-3868},
+	doi = {10.2514/1.C038103},
+	abstract = {High-fidelity yet compact nonlinear flight dynamic models for multirotor aircraft are derived from blade-element and momentum theory for use in control, estimation, and efficient simulation. The aim is to obtain models that are valid over a wide range of flight conditions and identifiable from flight data. Individual rotor force and moment models, along with airframe aerodynamics and motor inertial effects, are incorporated into a quasi-steady, nonlinear model for generic multirotor aircraft. A simulation study is conducted in which the derived model is used to inform the design of statistically principled experiments that facilitate accurate model identification. The relative importance of model parameters is evaluated using a high-fidelity simulation constructed from wind tunnel data. This process informs the selection and estimation of model parameters, which are then used to quantify the contribution of model terms across common flight conditions.},
+	image = {hopwoodPracticalNonlinearFlight2026.jpg}
+}
+
+@article{hopwoodSymmetryPreservingReducedOrderWind2026,
+	title = {Symmetry-Preserving Reduced-Order Wind Observers with Flight Test Results},
+	author = {Hopwood, Jeremy W. and Simmons, Benjamin M. and Woolsey, Craig A.},
+	year = 2026,
+	month = jun,
+	journal = {Journal of Guidance, Control, and Dynamics},
+	volume = {49},
+	number = {6},
+	pages = {1575--1587},
+	issn = {0731-5090, 1533-3884},
+	doi = {10.2514/1.G009281},
+	abstract = {Inferring wind velocity from aircraft motion is an enabling technology with applications in synthetic air data systems, path planning, safety monitoring, and atmospheric science. A reduced-order nonlinear state observer is developed to estimate wind velocity from aircraft motion. The observer is constructed by leveraging the symmetry of aircraft dynamics under the action of a Lie group to achieve global exponential convergence of the wind estimates to their true value. By only estimating the unmeasured wind and air-relative velocity, this reduced-order observer reduces computational complexity and simplifies nonlinear stability analysis. This approach eliminates the need for a small-perturbation assumption on the nonlinear dynamics yet casts the nonlinear wind estimation problem as the design of a linear, time-varying observer. Simulations and flight test results for a fixed-wing aircraft demonstrate the observer's performance and robustness to unmodeled turbulence, aerodynamic modeling error, and measurement noise, highlighting its practical applicability and potential to ensure safe operation of future aircraft systems.},
+	image = {hopwoodSymmetryPreservingReducedOrderWind2026.jpg}
 }
