@@ -24,6 +24,7 @@ author: Jeremy W. Hopwood
 
 navbar-links:
   About Me: "about"
+  Capabilities: "capabilities"
   Research:
     - Nonlinear Observers: "observers"
     - Wind Estimation: "wind_estimation"
@@ -110,6 +111,7 @@ footer-hover-col: "#FFB81C" # "#219ebc"
 
 site-css:
   - "/assets/css/publications.css"
+  - "/assets/css/capabilities.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
