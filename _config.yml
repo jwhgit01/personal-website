@@ -82,11 +82,11 @@ scholar:
 # The keywords to associate with your website, for SEO purposes
 keywords: "PACE lab,nonlinear control,flight dynamics,flight controls,estimation,system identification"
 
-######################################
-# --- Colours / background image --- #
-######################################
+#####################################
+# --- Colors / background image --- #
+#####################################
 
-# Personalize the colours in your website. Colour values can be any valid CSS colour
+# Personalize the colors in your website. color values can be any valid CSS color
 page-col: "#ffffff"
 text-col: "#333333" # "#023047"
 link-col: "#fb8500"
@@ -100,18 +100,17 @@ footer-link-col: "#ffffff" # "#023047"
 footer-hover-col: "#FFB81C" # "#219ebc"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
+# instead of color
 
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+# Suggest a color for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
 
 site-css:
   - "/assets/css/publications.css"
-  - "/assets/css/capabilities.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
