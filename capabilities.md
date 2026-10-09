@@ -1,194 +1,151 @@
 ---
-layout: page
-title: Lab Capabilities
-subtitle: Rapid UAV development, flight testing, and air-data innovation
+layout: default
+title: Capabilities & Collaboration
 permalink: /capabilities/
+css: /assets/css/capabilities.css
 ---
 
-The **Performance-Assured Control and Estimation (PACE) Lab** develops,
-integrates, and experimentally validates technologies for multirotor,
-fixed-wing, and electric vertical takeoff and landing (eVTOL) aircraft. We
-combine low-cost UAV platforms, advanced simulation, flight testing, system
-identification, air-data sensing, and state estimation to move ideas from
-theory to flight-validated results.
+# Capabilities & Collaboration
 
-<div class="capabilities-callout">
-  <strong>What we offer:</strong> an integrated path from modeling and
-  simulation through hardware integration, controlled testing, and outdoor
-  flight validation.
-</div>
+***Rigorous methods. Flight-tested evidence.***
 
-## Rapid UAV development and flight testing
+We help government, industry, and research partners develop and validate UAV technologies for challenging real-world conditions, including agile maneuvering, flight in turbulence, and multi-domain collaborative autonomy.
 
-We rapidly configure and instrument small UAVs to evaluate new research
-concepts, sensors, algorithms, and control systems.
+The **Performance-Assured Control and Estimation (PACE) Lab** specializes in the gap between state-of-the-art theory and credible flight test evidence. We combine rigorous analysis with rapid UAV integration, software development and flight testing so that new methods are not only publishable, but practical and defensible.
 
-<figure class="capabilities-figure">
-  <img src="/assets/img/racer.jpg"
-       alt="Instrumented multirotor UAV on a laboratory workbench">
-  <figcaption>
-    A modular multirotor research platform configured for rapid sensor,
-    flight-computer, and algorithm integration.
-  </figcaption>
-</figure>
+[Discuss a project](#work-with-us) &ensp;•&ensp; [See demonstrated results](#demonstrated-results)
 
-**Capabilities include:**
+## Why PACE
 
-- Multirotor, fixed-wing, and eVTOL research platforms
-- Custom payload and sensor integration
-- Flight-computer and autopilot integration
-- Rapid aircraft modification and prototyping
-- ROS- and PX4-based development
-- Experimental flight-test planning and execution
-- Software-in-the-loop (SIL) and hardware-in-the-loop (HIL) testing
+- **Beyond nominal flight**
+  
+  We work in regions of flight and with novel vehicle configurations where conventional assumptions and approaches fail.
 
-## Full-envelope system identification
+- **Designed to tackle uncertainty**
+  
+  Modeling error and external disturbances are not an afterthought. They an integral part of the design problem and resulting performance and safety guarantees.
 
-We identify flight-dynamic models from experimental data collected throughout
-the aircraft operating envelope, including nonlinear and off-nominal regimes
-that are poorly represented by small-perturbation models.
+- **Models that bridge the gap**
+  
+  We identify physics-based flight dynamic models that bridge the gap between traditional control-oriented models and high-fidelity computational models.
 
-**Relevant operating conditions include:**
+- **Rapid implementation and flight testing**
+  
+  We translate novel control and estimation methods into [PX4](https://px4.io/) and [ROS](https://www.ros.org/) through proven experimental workflows, spanning rigorous simulation and flight testing of small UAVs.
 
-- Aggressive and unsteady maneuvers
-- Stall, post-stall, and spin behavior
-- Low-speed flight
-- eVTOL transition
-- Rotor- and propeller-influenced flow
-- Other nonlinear flight conditions
+- **Leverage mathematical structure**
+  
+  Our control, estimation, and autonomy technologies leverage dynamical system structure (e.g., symmetry, invariance, passivity) to improve performance, robustness, and safety assurances.
+{: .capabilities-intro }
 
-The resulting models support simulation, control development, aircraft
-characterization, envelope expansion, and safety analysis. Learn more about
-our [system-identification research](/system_id/).
+Our distinctive capability is the connection among three activities that are often separated: **nonlinear aircraft modeling**, **control and estimation with performance guarantees**, and **experimental flight validation**.
 
-<div class="capabilities-placeholder" role="img"
-     aria-label="Placeholder for a system-identification results image">
-  <span>Image placeholder</span>
-  <strong>System-identification results</strong>
-  <small>
-    Suggested image: measured and model-predicted flight response across a
-    nonlinear maneuver.
-  </small>
-</div>
+## Problems we help solve
 
-## Wind estimation and synthetic air data
+Partners come to us when they need to:
+- characterize a new, unconventional, or poorly modeled aircraft;
+- evaluate a controller, estimator, sensor, or autonomy algorithm;
+- operate safely beyond nominal flight conditions;
+- infer wind or aerodynamic states without relying on dedicated sensors;
+- translate novel robotics concepts to the aerial domain; or
+- design UAV ground test and/or flight test campaigns.
 
-We develop algorithms that estimate wind and aerodynamic states from existing
-onboard measurements and aircraft models.
+## An integrated capability from modeling to flight
 
-**Estimated quantities may include:**
+1. ### Design, instrument, and integrate UAVs
 
-- Wind velocity
-- Airspeed
-- Angle of attack
-- Sideslip angle
+   ![Instrumented multirotor research UAV on a laboratory workbench](/assets/img/racer.jpg)
 
-Synthetic air data can reduce dependence on specialized sensors and provide
-information in operating regimes where conventional probes are ineffective.
-This is particularly valuable near hover and during eVTOL transition. Learn
-more about our [wind-estimation research](/wind_estimation/).
+   Design and configure multirotor, fixed-wing, and eVTOL platforms with new sensors, payloads, and flight control software.
 
-<div class="capabilities-placeholder" role="img"
-     aria-label="Placeholder for a wind-estimation validation image">
-  <span>Image placeholder</span>
-  <strong>Wind-estimation validation</strong>
-  <small>
-    Suggested image: estimated wind compared with reference measurements from
-    simulation, wind-tunnel testing, or flight.
-  </small>
-</div>
+   **Tools:** PX4, ROS 1 & 2, MATLAB, SIL/HIL, UAVCAN/DRONECAN
 
-## Low-cost, open-source air-data unit
+2. ### Identify aircraft flight dynamics
 
-Our custom small-UAV air-data unit provides an accessible alternative to
-conventional commercial probes.
+   ![Force and moment residuals from nonlinear multirotor modeling](/assets/img/hopwoodLargedomainNonlinearSystem2024.jpg)
 
-<div class="capabilities-gallery capabilities-gallery--two">
-  <figure class="capabilities-figure">
-    <img src="/assets/img/espaaro_adu.jpg"
-         alt="Fixed-wing UAV equipped with a wing-mounted air-data probe">
-    <figcaption>
-      Air-data instrumentation integrated on a fixed-wing research aircraft.
-    </figcaption>
-  </figure>
-  <figure class="capabilities-figure">
-    <img src="/assets/img/mtd4_adu.jpg"
-         alt="VTOL UAV equipped with a multi-directional air-data probe">
-    <figcaption>
-      A multi-directional probe configured for low-speed and transition-flight
-      testing.
-    </figcaption>
-  </figure>
-</div>
+   Identify uncertainty-quantified models from flight data for use in nonlinear control and estimation.
 
-**Key features:**
+   **Techniques:** Equation Error, Output Error, Machine Learning, Multivariate Orthogonal Function Modeling, Stepwise Regression
 
-- Approximately one-tenth the cost of comparable commercial systems
-- Open-source design
-- Predominantly 3D-printable construction
-- Compact, adaptable form factor
-- Validation through wind-tunnel testing
+3. ### Control and estimation design
 
-The system supports flight-test instrumentation, aircraft characterization,
-sensor validation, and synthetic-air-data research.
+   ![Parallel control architecture for robust stall spin control](/assets/img/hopwoodStallSpinFlight2022.jpg)
 
-## Controlled wind-field testing
+   Develop safety-assured control laws and state/disturbance estimators for uncertain and stochastic nonlinear systems.
 
-Mississippi State University's Raspet Flight Research Laboratory combines a
-**large programmable fan array** with a motion-capture system. The facility can
-generate spatially and temporally varying wind fields, enabling repeatable
-experiments in which both vehicle motion and the surrounding flow are known.
+   **Bodies of Theory:** Differential Geometry, Passivity-Based Control, Invariant EKF, Robust H<sub>∞</sub> Control & Filtering, Stochastic Stability
 
-<figure class="capabilities-figure capabilities-figure--portrait">
-  <img src="/assets/img/20250219_094819.jpg"
-       alt="Programmable fan array at the Raspet Flight Research Laboratory">
-  <figcaption>
-    The programmable fan array supports repeatable testing in controlled,
-    spatially varying wind fields.
-  </figcaption>
-</figure>
+4. ### Flight test validation
 
-**Applications include:**
+   ![eSPAARO fixed-wing UAV go-around during flight testing](/assets/img/eSPAARO-go-around.jpg)
 
-- Gust-response testing
-- Disturbance-rejection research
-- Wind-aware guidance and control
-- Wind-estimation validation
-- Flight-dynamic system identification
-- Controlled indoor vehicle testing
+   Build evidence through simulation, SIL/HIL, controlled wind experiments,
+   and outdoor flight tests, increasing risk in stages.
 
-## End-to-end research workflow
+   **Facilities:** MSU [North Farm](https://www.mafes.msstate.edu/branches/mainstation.php?location=foil) and [South Farm](https://www.mafes.msstate.edu/branches/mainstation.php?location=leveck), Raspet [Wind Wall](https://www.msstate.edu/newsroom/article/2025/03/msu-state-art-wind-lab-marks-new-era-national-drone-testing) and [motion capture system](https://www.ae.msstate.edu/research/asrl/), Low-speed wind tunnel
+{: .capabilities-pipeline }
 
-<ol class="capabilities-workflow" aria-label="PACE Lab research workflow">
-  <li>Theory</li>
-  <li>Modeling</li>
-  <li>Simulation</li>
-  <li>SIL/HIL testing</li>
-  <li>Integration</li>
-  <li>Controlled testing</li>
-  <li>Flight testing</li>
-  <li>Validation</li>
-</ol>
+## Attritable air data system
 
-This integrated workflow provides a rapid path from a new research concept to
-experimentally validated flight results. It also lets us introduce risk in
-stages, resolve integration issues early, and collect the evidence needed to
-evaluate performance.
+Our custom small UAS air data units provide open and adaptable alternatives to conventional commercial probes. The designs emphasize low cost, 3D-printable construction, replaceable components, and configurations tailored to high-risk UAV flight testing.
 
-## Collaboration areas
+- [**GitHub Repository**](https://github.com/jwhgit01/Attritable-Air-Data)
+- *Documentation site coming soon*
 
-We welcome collaborations with academic, government, and industry partners
-whose work would benefit from small-aircraft development and experimental
-validation. Potential collaborations include:
+![Fixed-wing UAV equipped with a wing-mounted air-data probe](/assets/img/espaaro_adu.jpg){:width="40%" height="auto" .center}
 
-- Sponsored and jointly developed research projects
-- Independent evaluation of sensors, algorithms, and control systems
-- UAV platform and payload integration
-- Focused wind-tunnel, fan-array, or outdoor flight-test campaigns
-- Flight-data collection, model development, and system identification
-- Wind-estimation and synthetic-air-data demonstrations
+![VTOL UAV equipped with a multidirectional air-data probe](/assets/img/mtd4_adu.jpg){:width="40%" height="auto" .center}
 
-If you have a research question, technology, or test objective that aligns with
-these capabilities, contact
-[Dr. Jeremy Hopwood](mailto:jhopwood@ae.msstate.edu) to discuss scope, platform
-needs, facilities, and a path to validation.
+## Research aircraft
+
+Our go-to aircraft are selected for fast modification, modularity, and risk mitigation.
+- *Technical specifications coming soon*
+- **eVTOL Aircraft In Development**
+
+![Fox fixed-wing UAV](/assets/img/research-aircraft/fox-with-students.webp)
+![RACER quadrotor UAV](/assets/img/research-aircraft/racer.jpg)
+{: .side-by-side-gallery }
+
+## Demonstrated results
+{: #demonstrated-results }
+
+### Wind estimation and synthetic air data
+
+We developed model-based wind estimators and demonstrated their rigorous convergence guarantees using fixed-wing and multirotor flight test data.
+- [Leverage symmetry to design a reduced-order observer](/assets/papers/hopwoodSymmetryPreservingReducedOrderWind2026.pdf)
+- [Use stochastic calculus to prove robustness to turbulence](/assets/papers/hopwoodNoisetostateStableSymmetrypreserving2025.pdf)
+- [Estimate bulk atmospheric flows using robust filtering](/assets/papers/gahanModelbasedWindEstimation2025.pdf)
+- [Incorporate unsteady aerodynamics into model-based algorithms](/assets/papers/halefomUnsteadyAerodynamicsModelbased2024.pdf)
+- [Use an energy-based perspective to handle maneuvering flight](/assets/papers/hopwoodPassivitybasedWindEstimation2024.pdf)
+- [Improve computational aspects of UAV-based wind profiling](/assets/papers/medinaEvaluationDopplerWind2025.pdf)
+- [Mitigate uncertainty and wind estimate sensitivity to modeling error](/assets/papers/gahanWindEstimateUncertainty2026.pdf)
+- [Use wind estimates for bio-inspired source localization](/assets/papers/cooperIntelligentWindEstimation2023.pdf)
+
+### Aircraft system identification
+
+We derived identifiable, physics-informed models for model-based design and developed techniques to identify these models from flight data.
+- [Derive an evaluate a physics-based model for nonlinear multirotor aerodynamics](/assets/papers/hopwoodPracticalNonlinearFlight2026.pdf)
+- [Leverage robust control to safely obtain information-rich flight data for unstable aircraft](/assets/papers/hopwoodRobustLinearParametervarying2024.pdf)
+- [Model and identify stall spin aerodynamics from flight data](/assets/papers/greshamSpinAerodynamicModeling2024.pdf)
+- [Lower the barrier to nonlinear model identification](/assets/papers/greshamRemoteUncorrelatedPilot2023.pdf)
+- [Identify a control-oriented model of fixed-wing unsteady aerodynamics](/assets/papers/halefomUnsteadyAerodynamicsModelbased2024.pdf)
+- [Open-source small UAV flight testing and control law evaluation](/assets/papers/greshamFlightTestApproach2022.pdf)
+
+### Stall-spin modeling and flight termination systems
+
+We identified nonlinear spin dynamics from flight data, designed robust stall spin flight termination methods, and validated these approaches through small UAV flight testing.
+- [Robustly guide the spinning descent along a desired direction](/assets/papers/hopwoodRobustStallSpin2023.pdf)
+- [Model and identify stall spin aerodynamics from flight data](/assets/papers/greshamSpinAerodynamicModeling2024.pdf)
+
+## Work with us
+{: #work-with-us }
+
+We work with academic, government, and industry partners through sponsored and joint research, proposal teams, independent technology evaluation, payload and platform integration, and focused wind-tunnel or flight-test campaigns.
+
+> **Bring us the difficult part.**
+>
+> If you have an aircraft, sensor, autonomy technology, or operating condition that needs credible modeling and experimental evidence, send a short description of the system, the conditions in which it must operate, and what you need to demonstrate.
+>
+> [**Discuss a research or test problem**](mailto:jhopwood@ae.msstate.edu?subject=PACE%20Lab%20collaboration%20inquiry)
+{: .capabilities-contact }
